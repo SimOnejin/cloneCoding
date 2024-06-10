@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Navbar Example</title>
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+
   <style>
     body {
       margin: 0;
@@ -23,11 +27,6 @@
     }
     .navbar-nav .nav-item .nav-link br {
       display: none;
-    }
-    @media (min-width: 992px) {
-      .navbar-nav .nav-item .nav-link br {
-        display: block;
-      }
     }
 
     .wrap {
@@ -62,6 +61,45 @@
     span {
       display:block;
     }
+
+    .noto-sans-jp {
+       font-family: "Noto Sans JP", sans-serif;
+       font-optical-sizing: auto;
+       font-weight: 100;
+       font-style: normal;
+     }
+
+    @media (max-width: 992px) {
+      .navbar-brand {
+        margin: auto;
+        display: block;
+        text-align: center;
+      }
+
+      .navbar-nav {
+        justify-content: start;
+        width: 100%;
+      }
+
+      .navbar-collapse {
+        justify-content: center;
+      }
+
+      .navbar-collapse .navbar-nav {
+        flex-direction: column;
+      }
+
+      .navbar-nav .nav-item {
+        margin: 0;
+        text-align: center;
+      }
+    }
+
+    @media (min-width: 993px) {
+      .navbar-nav .nav-item {
+        text-align: left;
+      }
+    }
   </style>
 </head>
 <body>
@@ -76,43 +114,43 @@
 
   <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
     <ul class="navbar-nav">
-      <li class="nav-item" style="margin-right: 15px; margin-left: 15px;">
+      <li class="nav-item" style="margin-right: 10px; margin-left: 10px;">
         <div class="wrap">
-          <a class="nav-link active ja text-center" href="index.html">
-            <span style="font-size: 14px; font-weight: bold; color: black">ホーム</span><br>
-            <span style="font-size: 10px; margin-top: -25px;">Home</span>
+          <a class="nav-link active ja text-center noto-sans-jp" href="index.html">
+            <span style="font-size: 14px; font-weight: bold; color: #333333;">ホーム</span><br>
+            <span style="font-size: 10px; margin-top: -2px; font-weight: normal;">Home</span>
           </a>
         </div>
       </li>
-      <li class="nav-item" style="margin-right: 15px; margin-left: 15px;">
+      <li class="nav-item" style="margin-right: 10px; margin-left: 10px;">
         <div class="wrap">
-          <a class="nav-link ja text-center" href="services.html">
-            <span style="font-size: 14px; font-weight: bold; color: black">サービス</span><br>
-            <span style="font-size: 10px; margin-top: -25px;">Service</span>
+          <a class="nav-link ja text-center noto-sans-jp" href="services.html">
+            <span style="font-size: 14px; font-weight: bold; color: #333333;">サービス</span><br>
+            <span style="font-size: 10px; margin-top: -2px; font-weight: normal;">Service</span>
           </a>
         </div>
       </li>
-      <li class="nav-item" style="margin-right: 15px; margin-left: 15px;">
+      <li class="nav-item" style="margin-right: 10px; margin-left: 10px;">
         <div class="wrap">
-          <a class="nav-link ja text-center" href="company.html">
-            <span style="font-size: 14px; font-weight: bold; color: black">会社案内</span><br>
-            <span style="font-size: 10px; margin-top: -25px;">Company</span>
+          <a class="nav-link ja text-center noto-sans-jp" href="company.html">
+            <span style="font-size: 14px; font-weight: bold; color: #333333;">会社案内</span><br>
+            <span style="font-size: 10px; margin-top: -2px; font-weight: normal;">Company</span>
           </a>
         </div>
       </li>
-      <li class="nav-item" style="margin-right: 15px; margin-left: 15px;">
+      <li class="nav-item" style="margin-right: 10px; margin-left: 10px;">
         <div class="wrap">
-          <a class="nav-link ja text-center" href="recruit.html">
-            <span style="font-size: 14px; font-weight: bold; color: black">採用情報</span><br>
-            <span style="font-size: 10px; margin-top: -25px;">Recruit</span>
+          <a class="nav-link ja text-center noto-sans-jp" href="recruit.html">
+            <span style="font-size: 14px; font-weight: bold; color: #333333;">採用情報</span><br>
+            <span style="font-size: 10px; margin-top: -2px; font-weight: normal;">Recruit</span>
           </a>
         </div>
       </li>
-      <li class="nav-item" style="margin-right: 15px; margin-left: 15px;">
+      <li class="nav-item" style="margin-right: 10px; margin-left: 10px;">
         <div class="wrap">
-          <a class="nav-link ja text-center" href="contact.html">
-            <span style="font-size: 14px; font-weight: bold; color: black">お問い合わせ</span><br>
-            <span style="font-size: 10px; margin-top: -25px;">Contact</span>
+          <a class="nav-link ja text-center noto-sans-jp" href="contact.html">
+            <span style="font-size: 14px; font-weight: bold; color: #333333;">お問い合わせ</span><br>
+            <span style="font-size: 10px; margin-top: -2px; font-weight: normal;">Contact</span>
           </a>
         </div>
       </li>

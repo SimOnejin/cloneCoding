@@ -30,6 +30,14 @@
           document.getElementById('navbar').innerHTML = data;
         });
     });
+
+    document.addEventListener("DOMContentLoaded", function() {
+      fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('footer').innerHTML = data;
+        });
+    });
   </script>
 
 </head>
@@ -48,7 +56,7 @@
       <div class="ltg-slide-text-caption" style="text-align:center;color:#ffffff;">プロマネージャー</div>
     </div>
     </section>
-
+    <!--End of site-header-->
 
 
 
@@ -73,10 +81,11 @@
           https://business.nikkei.com/atcl/opinion/15/100753/030700005</p>
 
       </div>
+      <!--End of body-content-->
 
 
     </section>
-
+    <!--End of site-body-->
 
 
 
@@ -84,6 +93,7 @@
 
 
 
+  <div id="footer"></div>
 </body>
 
 </html>

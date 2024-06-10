@@ -17,24 +17,32 @@
           document.getElementById('navbar').innerHTML = data;
         });
     });
+
+    document.addEventListener("DOMContentLoaded", function() {
+      fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('footer').innerHTML = data;
+        });
+    });
   </script>
 
 
 </head>
 
 <body>
-<div id="navbar"></div>
+  <div id="navbar"></div>
 
-<main>
-  <div class="page-header">
-    <div class="page-header-inner container">
-      <h1 class="page-header-title">会社案内</h1>
+  <main>
+    <div class="page-header">
+      <div class="page-header-inner container">
+        <h1 class="page-header-title">会社案内</h1>
+      </div>
     </div>
-  </div>
 
-</main>
-
+  </main>
 
 
+  <div id="footer"></div>
 </body>
 </html>

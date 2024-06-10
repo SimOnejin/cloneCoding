@@ -1,88 +1,78 @@
-<!-- navbar.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar Example</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body {
+      background-color: #fff;
       margin: 0;
       font-family: Arial, sans-serif;
     }
-    nav {
+    .navbar {
       background-color: #fff;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      padding: 10px 0;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
     }
-    .logo img {
+    .navbar-brand img {
       height: 50px;
-      margin-left: 20px;
     }
-    .nav-links {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-    }
-    .nav-links li {
-      margin-right: 20px;
-    }
-    .nav-links a {
-      text-decoration: none;
-      color: black;
+    .navbar-nav .nav-item .nav-link {
+      background-color: #fff;
       font-weight: bold;
-      padding: 8px 15px;
+      margin-left: 30px;
     }
-    .nav-links a:hover {
-      background-color: #f0f0f0;
-      border-radius: 5px;
+    .navbar-nav .nav-item .nav-link br {
+      background-color: #fff;
+      display: none;
     }
-    /* .nav-links .active {
-        border-bottom: 2px solid #333;
-    } */
+    @media (min-width: 992px) {
+      .navbar-nav .nav-item .nav-link br {
+        display: block;
+      }
+    }
+    .a {
+      text-size: 10px;
+    }
   </style>
 </head>
-
 <body>
-  <nav>
-    <div class="container text-center">
-      <div class="col">
-        <div class="logo row">
-          <a class="navbar-brand" href="../index.html">
-            <img src="../img/meishi-1.jpg" alt="Dream Picture Logo">
-          </a>
-        </div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="../index.html">
+    <img src="../img/meishi-1.jpg" alt="Dream Picture Logo">
+  </a>
 
-        <div class="row">
-          <div class="collapse navbar-collapse col">
-            <ul class="nav nav-bar justify-content-end text-center">
-              <li class="nav-item nav-links text-center">
-                <a href="../index.html" class="nav-link active" aria-current="page">
-                  ホーム<br>Home</a>
-              </li>
-              <li class="nav-item nav-links text-center">
-                <a href="services.html" class="nav-link active" aria-current="page">
-                  サービス<br>Service</a>
-              </li>
-              <li class="nav-item nav-links text-center">
-                <a href="company.html" class="nav-link active" aria-current="page">
-                  会社案内<br>Company</a>
-              </li>
-              <li class="nav-item nav-links">
-                <a href="recruit.html" class="nav-link active" aria-current="page">
-                  採用情報<br>Recruit</a></li>
-              <li class="nav-item nav-links">
-                <a href="contact.html" class="nav-link active" aria-current="page">
-                  お問い合わせ<br>Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </nav>
+  <button class="navbar-toggler justify-content-start" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="../index.html">
+          <p>ホーム</p><br>
+          <p>HOME</p>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="services.html">サービス<br>Service</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="company.html">会社案内<br>Company</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="recruit.html">採用情報<br>Recruit</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">お問い合わせ<br>Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

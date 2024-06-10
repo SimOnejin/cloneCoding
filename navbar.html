@@ -21,14 +21,6 @@
       margin-left: 15px;
       margin-right: 15px;
     }
-    .ja .nav-link {
-      font-weight: bold;
-      font-size: 16px; /* 일본어 텍스트 크기 */
-    }
-    .en .nav-link {
-      font-weight: bold;
-      font-size: 14px; /* 영어 텍스트 크기 */
-    }
     .navbar-nav .nav-item .nav-link br {
       display: none;
     }
@@ -36,6 +28,13 @@
       .navbar-nav .nav-item .nav-link br {
         display: block;
       }
+    }
+    .navbar-nav .nav-item:hover::after {
+      content: "";
+      display: block;
+      position: relative;
+      border-bottom: 1px solid blue;
+      margin-bottom: -10px;
     }
   </style>
 </head>

@@ -24,6 +24,46 @@
 
 <body>
 <div id="navbar"></div>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+  <meta charset="UTF-8">
+  <title>Service</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="">
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('navbar').innerHTML = data;
+        });
+    });
+  </script>
+
+
+</head>
+
+<body>
+  <div id="navbar"></div>
+
+  <main>
+    <div class="page-header">
+      <div class="page-header-inner container">
+        <h1 class="page-header-title">会社案内</h1>
+      </div>
+    </div>
+
+  </main>
+
+
+
+</body>
+</html>
 
 </body>
 </html>

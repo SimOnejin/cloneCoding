@@ -131,20 +131,37 @@
       cursor: pointer;
     }
   </style>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('navbar').innerHTML = data;
+        });
+    });
+
+    var modal = document.getElementById("myModal");
+    var btn = document.getElementById("intro");
+    var span = document.getElementsByClassName("close")[0];
+
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
 </head>
 
 <body>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    fetch('navbar.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('navbar').innerHTML = data;
-      });
-  });
-</script>
-
 <div class="navbar navbar-expand-lg navbar-light" style="margin-right: 35px; margin-left: 35px;">
   <a class="navbar-brand" href="index.html">
     <img src="img/meishi-1.jpg" style="height: 59.99px; width: 298.23px" alt="Dream Picture Logo">
@@ -212,25 +229,6 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-<script>
-  var modal = document.getElementById("myModal");
-  var btn = document.getElementById("intro");
-  var span = document.getElementsByClassName("close")[0];
-
-  btn.onclick = function() {
-    modal.style.display = "block";
-  }
-
-  span.onclick = function() {
-    modal.style.display = "none";
-  }
-
-  window.onclick = function(event) {
-    if (event.target == modal) {
-      modal.style.display = "none";
-    }
-  }
-</script>
 
 </body>
 </html>

@@ -253,6 +253,9 @@ textarea {
 
 /*Onejin*/
 
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+
 .container {
   display: flex;
   align-items: center;
@@ -264,6 +267,7 @@ textarea {
   background-color: rgb(52, 97, 172);
   color: white;
   height: 9em;
+
 }
 
 .page-header-inner{
@@ -275,8 +279,26 @@ textarea {
   align-items: center;
   text-align: center;
   padding: 20px;
+
 }
 
+.ltg-slide-text-title {
+  font-size: 18px;
+  background-color: unset;
+  position: relative;
+  border: none;
+  padding: unset;
+  margin-left: unset;
+  margin-right: unset;
+  border-radius: unset;
+  outline: unset;
+  outline-offset: unset;
+  box-shadow: unset;
+  content: none;
+  overflow: unset;
+  margin-bottom: 0;
+  display: block;
+}
 
 
 

@@ -261,7 +261,8 @@ textarea {
 
 
 .page-header{
-  background-color: rgb(52, 97, 172);
+  /*background-color: rgb(52, 97, 172);*/
+  background-color: rgb(191, 14, 29);
   color: white;
   height: 19em;
 }

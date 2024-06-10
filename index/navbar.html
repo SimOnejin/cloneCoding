@@ -1,0 +1,88 @@
+<!-- navbar.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    nav {
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 10px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo img {
+      height: 50px;
+      margin-left: 20px;
+    }
+    .nav-links {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+    .nav-links li {
+      margin-right: 20px;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      padding: 8px 15px;
+    }
+    .nav-links a:hover {
+      background-color: #f0f0f0;
+      border-radius: 5px;
+    }
+    /* .nav-links .active {
+        border-bottom: 2px solid #333;
+    } */
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div class="container text-center">
+      <div class="col">
+        <div class="logo row">
+          <a class="navbar-brand" href="../index.html">
+            <img src="../img/meishi-1.jpg" alt="Dream Picture Logo">
+          </a>
+        </div>
+
+        <div class="row">
+          <div class="collapse navbar-collapse col">
+            <ul class="nav nav-bar justify-content-end text-center">
+              <li class="nav-item nav-links text-center">
+                <a href="../index.html" class="nav-link active" aria-current="page">
+                  ホーム<br>Home</a>
+              </li>
+              <li class="nav-item nav-links text-center">
+                <a href="services.html" class="nav-link active" aria-current="page">
+                  サービス<br>Service</a>
+              </li>
+              <li class="nav-item nav-links text-center">
+                <a href="company.html" class="nav-link active" aria-current="page">
+                  会社案内<br>Company</a>
+              </li>
+              <li class="nav-item nav-links">
+                <a href="recruit.html" class="nav-link active" aria-current="page">
+                  採用情報<br>Recruit</a></li>
+              <li class="nav-item nav-links">
+                <a href="contact.html" class="nav-link active" aria-current="page">
+                  お問い合わせ<br>Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</body>
+</html>

@@ -88,6 +88,10 @@
       .navbar-nav .nav-item {
         text-align: left;
       }
+
+      .modal .modal-content {
+        display: none;
+      }
     }
 
     .modal {
@@ -122,7 +126,7 @@
     }
     .close {
       color: #aaa;
-      float: right;
+      float: left;
       font-size: 28px;
       font-weight: bold;
     }
@@ -193,13 +197,15 @@
 </div>
 
 <div id="myModal" class="modal">
-  <div class="modal-content">
-    <div class="justify-content-end">
+  <div class="modal-content" style="padding: 10px;">
+    <div class="w-100">
       <button type="button" class="close" aria-label="Close">
         <i class="bi bi-x-square"></i>
       </button>
     </div>
-    <h2>Intro</h2>
+    <div>
+      <h2>Intro</h2>
+    </div>
     <p>여기에 새로운 콘텐츠가 표시됩dfa니다.</p>
   </div>
 </div>

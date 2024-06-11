@@ -338,7 +338,7 @@ textarea {
   display: flex;
   position: fixed;
   right: 4%;
-  bottom: 7%
+  bottom: 6%
 }
 
 #scrollToTopBtn:active {
@@ -351,6 +351,11 @@ textarea {
   border: none;
 }
 
+.page-body{
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 5%;
+}
 
 
 

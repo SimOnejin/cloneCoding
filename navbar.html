@@ -15,18 +15,18 @@
       margin: 0;
       font-family: Arial, sans-serif;
     }
-    .navbar-brand img {
+    .navbar1-brand img {
       height: 50px;
     }
-    .navbar {
+    .navbar1 {
       padding-left: 30px;
       padding-right: 30px;
     }
-    .navbar-nav .nav-item .nav-link {
+    .navbar1-nav .nav1-item .nav1-link {
       padding-left: 12px;
       padding-right: 12px;
     }
-    .navbar-nav .nav-item .nav-link br {
+    .navbar1-nav .nav1-item .nav1-link br {
       display: none;
     }
 
@@ -71,7 +71,7 @@
      }
 
     @media (max-width: 992px) {
-      .navbar-brand {
+      .navbar1-brand {
         margin: auto;
         display: block;
         text-align: center;
@@ -85,7 +85,7 @@
     }
 
     @media (min-width: 993px) {
-      .navbar-nav .nav-item {
+      .navbar1-nav .nav-item {
         text-align: left;
       }
 
@@ -141,8 +141,8 @@
 
 <body>
 
-<div class="navbar navbar-expand-lg navbar-light" style="margin-right: 35px; margin-left: 35px;">
-  <a class="navbar-brand" href="index.html">
+<div class="navbar1 navbar navbar-expand-lg navbar-light" style="margin-right: 35px; margin-left: 35px;">
+  <a class="navbar1-brand navbar-brand" href="index.html">
     <img src="img/meishi-1.jpg" style="height: 59.99px; width: 298.23px" alt="Dream Picture Logo">
   </a>
 
@@ -151,42 +151,42 @@
   </button>
 
   <div class="collapse navbar-collapse">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item" style="margin-right: 10px; margin-left: 10px;">
+    <ul class="navbar1-nav navbar-nav ml-auto">
+      <li class="nav-item nav1-item" style="margin-right: 10px; margin-left: 10px;">
         <div class="wrap">
-          <a class="nav-link active ja text-center noto-sans-jp" href="index.html">
+          <a class="nav1-link nav-link active ja text-center noto-sans-jp" href="index.html">
             <span style="font-size: 14px; font-weight: bold; color: #333333;">ホーム</span><br>
             <span style="font-size: 10px; margin-top: -2px; font-weight: normal;">Home</span>
           </a>
         </div>
       </li>
-      <li class="nav-item" style="margin-right: 10px; margin-left: 10px;">
+      <li class="nav1-item nav-item" style="margin-right: 10px; margin-left: 10px;">
         <div class="wrap">
-          <a class="nav-link ja text-center noto-sans-jp" href="services.html">
+          <a class="nav1-link nav-link ja text-center noto-sans-jp" href="services.html">
             <span style="font-size: 14px; font-weight: bold; color: #333333;">サービス</span><br>
             <span style="font-size: 10px; margin-top: -2px; font-weight: normal;">Service</span>
           </a>
         </div>
       </li>
-      <li class="nav-item" style="margin-right: 10px; margin-left: 10px;">
+      <li class="nav1-item nav-item" style="margin-right: 10px; margin-left: 10px;">
         <div class="wrap">
-          <a class="nav-link ja text-center noto-sans-jp" href="company.html">
+          <a class="nav1-link nav-link ja text-center noto-sans-jp" href="company.html">
             <span style="font-size: 14px; font-weight: bold; color: #333333;">会社案内</span><br>
             <span style="font-size: 10px; margin-top: -2px; font-weight: normal;">Company</span>
           </a>
         </div>
       </li>
-      <li class="nav-item" style="margin-right: 10px; margin-left: 10px;">
+      <li class="nav1-item nav-item" style="margin-right: 10px; margin-left: 10px;">
         <div class="wrap">
-          <a class="nav-link ja text-center noto-sans-jp" href="recruit.html">
+          <a class="nav1-link nav-link ja text-center noto-sans-jp" href="recruit.html">
             <span style="font-size: 14px; font-weight: bold; color: #333333;">採用情報</span><br>
             <span style="font-size: 10px; margin-top: -2px; font-weight: normal;">Recruit</span>
           </a>
         </div>
       </li>
-      <li class="nav-item" style="margin-right: 10px; margin-left: 10px;">
+      <li class="nav1-item nav-item" style="margin-right: 10px; margin-left: 10px;">
         <div class="wrap">
-          <a class="nav-link ja text-center noto-sans-jp" href="contact.html">
+          <a class="nav1-link nav-link ja text-center noto-sans-jp" href="contact.html">
             <span style="font-size: 14px; font-weight: bold; color: #333333;">お問い合わせ</span><br>
             <span style="font-size: 10px; margin-top: -2px; font-weight: normal;">Contact</span>
           </a>
@@ -203,12 +203,19 @@
         <i class="bi bi-x-square"></i>
       </button>
     </div>
-    <div>
-      <h2>Intro</h2>
+
+    <div >
+      <form class="container-fluid">
+        <div class="input-group justify-content-center w-100">
+          <input type="text" class="form-control col-8" aria-label="Username" aria-describedby="basic-addon1">
+          <span class="input-group-text col-2" id="basic-addon1">検索</span>
+        </div>
+      </form>
+      <p>여기에 새로운 콘텐츠가 표시됩니다.</p>
     </div>
-    <p>여기에 새로운 콘텐츠가 표시됩dfa니다.</p>
   </div>
 </div>
+
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>

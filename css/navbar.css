@@ -131,21 +131,3 @@ span {
   text-decoration: none;
   margin-left: 5px;
 }
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  height: 2000px; /* 길게 만들어서 스크롤 가능하게 */
-}
-
-#menu {
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  background-color: #333;
-  color: white;
-  padding: 10px;
-  display: none; /* 처음에 안 보이게 설정 */
-  z-index: 1000;
-}
-

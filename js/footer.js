@@ -1,4 +1,9 @@
 document.addEventListener("DOMContentLoaded", function() {
+  var fontAwesomeScript = document.createElement("script");
+  fontAwesomeScript.src = "https://kit.fontawesome.com/2aca29b317.js";
+  fontAwesomeScript.crossOrigin = "anonymous";
+  document.head.appendChild(fontAwesomeScript);
+
   fetch('footer.html')
     .then(response => response.text())
     .then(data => {

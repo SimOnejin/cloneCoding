@@ -329,9 +329,27 @@ textarea {
 
 
 
+#scrollToTopBtn{
+  border: none;
+  background-color: transparent;
+  scale: 2;
+  color: #000099;
 
+  display: flex;
+  position: fixed;
+  right: 4%;
+  bottom: 7%
+}
 
+#scrollToTopBtn:active {
+  background-color: transparent;
+  border: none;
+}
 
+#scrollToTopBtn:hover {
+  background-color: transparent;
+  border: none;
+}
 
 
 

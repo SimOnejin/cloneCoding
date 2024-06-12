@@ -261,7 +261,23 @@ textarea {
   align-items: center;
   justify-content: center;
 }
+.ForOverlay{
+  position: relative;
+}
+.overlay {
+  /*width: 200px;*/
+  /*height: 100px;*/
+  /*background-color: rgba(255, 0, 0, 0.5);*/
+  position: absolute;
+  top: 45%;
+  right: 1%;
+  z-index: 10; /* 높은 값 */
 
+}
+.viewport-text {
+  color: white;
+  font-size: 15vw; /* 뷰포트 너비의 5% */
+ }
 
 .page-header{
   background-color: rgb(52, 97, 172);

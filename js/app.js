@@ -12,3 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
   let boxes = document.querySelectorAll('.box');
   boxes.forEach(box => observer.observe(box));
 });
+
+window.addEventListener('load', () => {
+  setTimeout(()=>scrollTo(0,0),100);
+})

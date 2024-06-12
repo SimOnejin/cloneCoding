@@ -20,6 +20,20 @@
       height: 100%;
     }
 
+    .bg-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .table-responsive {
+      width: 100%;
+    }
+
+    .table {
+      width: 100%;
+    }
+
     table td,
     table th {
       text-overflow: ellipsis;
@@ -39,6 +53,11 @@
     .bg-image {
       border-radius: 2em;
     }
+
+    iframe {
+      border-radius: 2em;
+    }
+
   </style>
 
 
@@ -107,71 +126,69 @@
         </div>
 
         <section class="intro">
-          <div class="bg-image h-100" style=" background-image: url(https://mdbootstrap.com/img/Photos/new-templates/glassmorphism-article/img7.jpg);">
-            <div class="mask d-flex align-items-center h-100">
-              <div class="container" style="width: 100%">
-                <div class="row justify-content-center w-100">
-                  <div class="col">
-                      <div class="card-body mask-custom">
-                        <div class="table-responsive ">
-                          <table class="table table-borderless text-white mb-0">
-                            <tbody>
-                            <tr>
-                              <th scope="row">会社名</th>
-                              <td>株式会社NOVO.S</td>
-                            </tr>
-                            <tr>
-                              <th scope="row">代表取締役</th>
-                              <td>文　敞煥</td>
-                            </tr>
-                            <tr>
-                              <th scope="row">所在地</th>
-                              <td>〒160-0004<br>東京都新宿区四谷2丁目8番地<br>コーポクローバ瀬尾501号</td>
-                            </tr>
-                            <tr>
-                              <th scope="row">連絡先</th>
-                              <td>03-6681-7292</td>
-                            </tr>
-                            <tr>
-                              <th scope="row">設立</th>
-                              <td>2020年4月8日</td>
-                            </tr>
-                            <tr>
-                              <th scope="row">資本金</th>
-                              <td>500万円</td>
-                            </tr>
-                            <tr>
-                              <th scope="row">社員数</th>
-                              <td>28名（契約社員含む）</td>
-                            </tr>
-                            <tr>
-                              <th scope="row">URL</th>
-                              <td>http://www.novos.co.jp</td>
-                            </tr>
-                            <tr>
-                              <th scope="row">主要取引先</th>
-                              <td>株式会社ZOOMSYSTEM、株式会社KS情報SYSTEM <br>
-                                  株式会社ITCEN-JAPAN、株式会社亜細亜情報システム <br>
-                                  株式会社J_TECH、日本ティーマックスソフト株式会社 <br>
-                                  株式会社NURINUBI、株式会社AIGOSS
-                              </td>
-                            </tr>
-                            <tr>
-                              <th scope="row">取引銀行</th>
-                              <td>みずほ銀行、りそな銀行</td>
-                            </tr>
-                            </tbody>
-                          </table>
-                        </div>
+          <div class="mask d-flex align-items-center h-100 bg-image" style="background-image: url(https://mdbootstrap.com/img/Photos/new-templates/glassmorphism-article/img7.jpg);">
+            <div class="container">
+              <div class="row justify-content-center w-100">
+                <div class="col">
+                    <div class="card-body w-100">
+                      <div class="table-responsive mask-custom">
+                        <table class="table table-borderless text-white mb-4">
+                          <tbody>
+                          <tr>
+                            <th scope="row">会社名</th>
+                            <td>株式会社NOVO.S</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">代表取締役</th>
+                            <td>文　敞煥</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">所在地</th>
+                            <td>〒160-0004<br>東京都新宿区四谷2丁目8番地<br>コーポクローバ瀬尾501号</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">連絡先</th>
+                            <td>03-6681-7292</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">設立</th>
+                            <td>2020年4月8日</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">資本金</th>
+                            <td>500万円</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">社員数</th>
+                            <td>28名（契約社員含む）</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">URL</th>
+                            <td>http://www.novos.co.jp</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">主要取引先</th>
+                            <td>株式会社ZOOMSYSTEM、株式会社KS情報SYSTEM <br>
+                                株式会社ITCEN-JAPAN、株式会社亜細亜情報システム <br>
+                                株式会社J_TECH、日本ティーマックスソフト株式会社 <br>
+                                株式会社NURINUBI、株式会社AIGOSS
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">取引銀行</th>
+                            <td>みずほ銀行、りそな銀行</td>
+                          </tr>
+                          </tbody>
+                        </table>
                       </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
         </section>
 
-        <section style="padding-top: 5%;">
+        <section style="padding-top: 5%; margin-bottom: 50px;">
           <hr style="height: 2px; background-color: #021f3d; border: none;">
 
           <div>
@@ -181,15 +198,17 @@
             <div>
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.5842428928286!2d139.7249761!3d35.687237900000014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c8cc55240e5%3A0xf9bea9c407bc4512!2s501%2C%202-ch%C5%8Dme-8%20Yotsuya%2C%20Shinjuku%20City%2C%20Tokyo%20160-0004!5e0!3m2!1sko!2sjp!4v1718183182731!5m2!1sko!2sjp" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
+            <div style="margin-top: 20px;">
+              <h6>
+                四谷駅(中央線、南北線、中央総武線角手)2番出口から8分 <br>
+                四谷三丁目駅(丸ノ内線)4番出口から7分<br>
+                曙橋(新宿線)1番出口から12分 <br>
+                信濃町(中央総武線角手)1番出口から15分
+              </h6>
+            </div>
           </div>
       </section>
-
-
-    </div>
-    <!--End of page-body-->
-
   </main>
-
 
   <div id="footer"></div>
 

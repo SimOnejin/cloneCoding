@@ -338,7 +338,9 @@ textarea {
   display: flex;
   position: fixed;
   right: 4%;
-  bottom: 6%
+  bottom: 6%;
+
+  transition: opacity 0.5s ease; /* 부드러운 전환 */
 }
 
 #scrollToTopBtn:active {

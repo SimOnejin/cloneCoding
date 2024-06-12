@@ -13,14 +13,14 @@ document.addEventListener("DOMContentLoaded", function() {
       var scrollToTopBtn = document.getElementById("scrollToTopBtn");
       var rootElement = document.documentElement;
 
-      // function handleScroll() {
-      //   // Show button when scrolled down 100px from top
-      //   if (rootElement.scrollTop > 100) {
-      //     scrollToTopBtn.style.display = "block";
-      //   } else {
-      //     scrollToTopBtn.style.display = "none";
-      //   }
-      // }
+      function handleScroll() {
+        // Show button when scrolled down 100px from top
+        if (rootElement.scrollTop > 100) {
+          scrollToTopBtn.style.opacity = "1";
+        } else {
+          scrollToTopBtn.style.opacity = "0";
+        }
+      }
 
       function scrollToTop() {
         // Scroll to top behavior

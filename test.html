@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang=ja>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <style>
+    body{
+      background-color: black;
+    }
+
+    h1{
+      color: white;
+    }
+    .box {
+      color: white;
+      height: 1000px;
+      margin: 50px 0;
+      opacity: 0;
+      transition: opacity 1s;
+    }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      let observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = 1;
+          }
+        });
+      }, { threshold: 0.2 });
+
+      let boxes = document.querySelectorAll('.box');
+      boxes.forEach(box => observer.observe(box));
+    });
+
+
+  </script>
+
+</head>
+<body>
+    <div><h1>hello</h1></div>
+    <div class="box"><h1>HELLO</h1></div>
+    <div class="box"><h1>WORLD</h1></div>
+    <div class="box"><h1>THIS</h1></div>
+    <div class="box"><h1>is</h1></div>
+    <div class="box"><h1>Interactive</h1></div>
+</body>
+</html>

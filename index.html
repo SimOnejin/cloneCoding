@@ -27,6 +27,36 @@
   <script src="js/app.js" defer></script>
   <script src="js/footer.js" defer></script>
 
+  <style>
+    .box {
+      color: black;
+      margin: 50px 0;
+      opacity: 0;
+      transition: opacity 1s;
+    }
+    body{
+      background-color: black;
+    }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      let observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = 1;
+          } else {
+            entry.target.style.opacity = 0;
+          }
+        });
+      }, { threshold: 0.5 });
+
+      let boxes = document.querySelectorAll('.box');
+      boxes.forEach(box => observer.observe(box));
+    });
+
+
+  </script>
+
 </head>
 
 <body>
@@ -36,10 +66,10 @@
     <section class="site-header">
     <div>
       <picture>
-        <img class="main_image" src="img/sample-img20-1.jpg" alt="sample-img20-1.jpg">
+        <img class="main_image box" src="img/sample-img20-1.jpg" alt="sample-img20-1.jpg">
       </picture>
-      <h3 class="ltg-slide-text-title main_image_text" style="text-align:center;color:#ffffff;">プロジェクトマネジメント及びマネジメント人材育成をサポートします</h3>
-      <div class="ltg-slide-text-caption" style="text-align:center;color:#ffffff;">プロマネージャー</div>
+      <h3 class="ltg-slide-text-title main_image_text box" style="text-align:center;color:#ffffff;">プロジェクトマネジメント及びマネジメント人材育成をサポートします</h3>
+      <div class="ltg-slide-text-caption box" style="text-align:center;color:#ffffff;">プロマネージャー</div>
     </div>
     </section>
     <!--End of site-header-->
@@ -47,25 +77,27 @@
 
 
     <section class="site-body">
-      <div class="body-image">
+      <div class="body-image box">
         <img style="max-width: 100%;" src="img/e33a410031a6bcfd323d36c18ef57b31-1.jpg" alt="forest" sizes="(max-width: 1920px) 100vw, 1920px">
       </div>
 
       <div class="body-content">
-        <h2>システム開発プロジェクトの現状</h2>
-        <p>システム開発プロジェクトの失敗は相変わらず続いている、と報じられています。</p>
-        <p>👉『システム開発プロジェクトの現状』に対する分析は、下記『サービス案内』の「サービスの詳細を確認する」をご参照ください。</p>
-        <p>分析概略：大規模システム開発の場合、状況は複雑で、問題も多く、諸要因が混在している為、問題の原因を一つだけに絞って断定するのが難しい。故に、システム開発の前工程であり、全体的に影響範囲が広い＜要件定義の不十分＞を失敗の理由に挙げるのが、良くあるケースである...</p>
+        <h2 class="box">システム開発プロジェクトの現状</h2>
+        <p class="box">システム開発プロジェクトの失敗は相変わらず続いている、と報じられています。</p>
+        <p class="box">👉『システム開発プロジェクトの現状』に対する分析は、下記『サービス案内』の「サービスの詳細を確認する」をご参照ください。</p>
+        <p class="box">分析概略：大規模システム開発の場合、状況は複雑で、問題も多く、諸要因が混在している為、問題の原因を一つだけに絞って断定するのが難しい。故に、システム開発の前工程であり、全体的に影響範囲が広い＜要件定義の不十分＞を失敗の理由に挙げるのが、良くあるケースである...</p>
         <br>
-        <p>【日経クロステック 2024.01.17】マネジャーばかり増える泥沼プロジェクト、本番稼働が絶望的だと悟ったSE
+        <p class="box">【日経クロステック 2024.01.17】マネジャーばかり増える泥沼プロジェクト、本番稼働が絶望的だと悟ったSE
           <br>
           https://xtech.nikkei.com/atcl/nxt/column/18/00084/00296/?n_cid=nbpnxt_mled_chm
         </p>
 
-        <p>日経ビジネス 2018.03.08】プロジェクト失敗の理由、15 年前から変わらず（1745 事例を調査、成功率は 52.8％）
+        <p class="box">日経ビジネス 2018.03.08】プロジェクト失敗の理由、15 年前から変わらず（1745 事例を調査、成功率は 52.8％）
           <br>
           https://business.nikkei.com/atcl/opinion/15/100753/030700005</p>
 
+
+        <img class="box" style="max-width: 100%; margin-bottom: 300px" src="img/sample-img08-1024x683-2.jpg" alt="forest" sizes="(max-width: 1920px) 100vw, 1920px">
       </div>
       <!--End of body-content-->
 

@@ -2,6 +2,15 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
 }
+
+#navbar{
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  /*box-shadow: 0 4px 4px -4px rgba(0, 0, 0, 0.5);*/
+}
+
 .navbar1-brand img {
   height: 50px;
 }

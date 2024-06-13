@@ -106,6 +106,10 @@ textarea {
  *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
  */
 
+.font-gray {
+  color: #444444;
+}
+
 .visually-hidden {
   border: 0;
   clip: rect(0, 0, 0, 0);

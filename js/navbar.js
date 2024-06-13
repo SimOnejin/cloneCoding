@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
             // 네비게이션 바 높이에 따른 컨텐츠 상단 마진 조정
             var navbar = document.getElementById('navbar');
             var content_1 = document.getElementById('content_1');
+            content_1.style.paddingTop = 0 + 'px';
 
             function adjustContentMargin() {
                 var navbarHeight = navbar.offsetHeight;

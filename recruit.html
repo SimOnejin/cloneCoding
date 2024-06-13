@@ -12,8 +12,48 @@
   <script src="js/app.js" defer></script>
   <script src="js/footer.js" defer></script>
   <style>
-    tr {
-      height: 80px;
+
+    .b-table table th {
+      width: 15%;
+    }
+
+    .big-screen {
+      padding-top: 1.3%;
+      text-decoration: none;
+      color: black;
+      font-size: small;
+      padding-left: 15%;
+    }
+
+
+    @media (max-width: 400px) {
+      tr {
+        height: 50px;
+      }
+      th. {
+        width: 100px;
+      }
+      .b-table {
+        display: none;
+      }
+      .small-screen {
+        padding-left: 2%;
+      }
+      .big-screen {
+        display: none;
+      }
+    }
+
+    @media (min-width: 401px) {
+      tr {
+        height: 80px;
+      }
+      .a-table {
+        display: none;
+      }
+      .small-screen {
+        display: none;
+      }
     }
   </style>
 
@@ -28,73 +68,138 @@
           <h1 class="page-header-title">採用情報</h1>
         </div>
       </div>
-      <p style="padding-left: 15%; padding-top: 1.3%;text-decoration: none; color: black; font-size: small">
+      <p class="big-screen">
+        <a href="index.html" style="text-decoration: dotted; color: #666666"><i class="fa-solid fa-house"></i>Home</a> / <a href="company.html" style="text-decoration: dotted; color: #666666">会社案内</a> / <a style="color: #666666">採用情報</a>
+      </p>
+
+      <p class="small-screen">
         <a href="index.html" style="text-decoration: dotted; color: #666666"><i class="fa-solid fa-house"></i>Home</a> / <a href="company.html" style="text-decoration: dotted; color: #666666">会社案内</a> / <a style="color: #666666">採用情報</a>
       </p>
       <hr>
 
-      <div class="body-content" style="margin-top: -1px; padding-top: 20px; padding-bottom: 50px; width: 85%">
+      <div class="b-table body-content" style="margin-top: -1px; padding-top: 20px; padding-bottom: 50px; width: 85%">
         <div class="w-100 container" style="padding-left:15%; text-align: start; margin-top: 20px;">
 
           <table class="table table-hover">
             <tbody >
             <tr class="font-gray nano-sans-jp">
-              <th scope="row" class="align-middle" style="font-size: 1.5vw">応募資格</th>
-              <td class="align-middle" style="font-size: 1.5vw">専門大学以上</td>
+              <th scope="row" class="align-middle" style="font-size: 16px;">応募資格</th>
+              <td class="align-middle table" style="font-size: 16px;">専門大学以上</td>
             </tr>
             <tr class="font-gray nano-sans-jp">
-              <th scope="row" class="align-middle" style="font-size: 1.3vw">募集職種</th>
-              <td class="align-middle" style="font-size: 1.3vw">プログラマ(SE候補)</td>
+              <th scope="row" class="align-middle" style="font-size: 16px;">募集職種</th>
+              <td class="align-middle table" style="font-size: 16px;">プログラマ(SE候補)</td>
             </tr>
             <tr class="font-gray nano-sans-jp">
-              <th scope="row" class="align-middle" style="font-size: 1.3vw">仕事内容</th>
-              <td class="align-middle" style="font-size: 1.3vw">お客様先に常駐し、主にシステムの開発・構築業務や、管理業務を行います。</td>
+              <th scope="row" class="align-middle" style="font-size: 16px;">仕事内容</th>
+              <td class="align-middle table" style="font-size: 16px;">お客様先に常駐し、主にシステムの開発・構築業務や、管理業務を行います。</td>
             </tr>
             <tr class="font-gray nano-sans-jp">
-              <th scope="row" class="align-middle" style="font-size: 1.3vw">教育制度</th>
-              <td class="align-middle" style="font-size: 1.3vw">社内研修や配属先でのOJT</td>
+              <th scope="row" class="align-middle" style="font-size: 16px;">教育制度</th>
+              <td class="align-middle" style="font-size: 16px;">社内研修や配属先でのOJT</td>
             </tr>
             <tr class="font-gray nano-sans-jp">
-              <th scope="row" class="align-middle" style="font-size: 1.3vw">人物像</th>
-              <td class="align-middle" style="font-size: 1.3vw">社会人としてのモラル、責任感とやる気の有る方。</td>
+              <th scope="row" class="align-middle" style="font-size: 16px;">人物像</th>
+              <td class="align-middle" style="font-size: 16px;">社会人としてのモラル、責任感とやる気の有る方。</td>
             </tr>
             <tr class="font-gray nano-sans-jp">
-              <th scope="row" class="align-middle" style="font-size: 1.3vw">給与</th>
-              <td class="align-middle" style="font-size: 1.3vw">基本給/能力ポイント給、時間外手当（交通費、全額支給）</td>
+              <th scope="row" class="align-middle" style="font-size: 16px;">給与</th>
+              <td class="align-middle" style="font-size: 16px;">基本給/能力ポイント給、時間外手当（交通費、全額支給）</td>
             </tr>
             <tr class="font-gray nano-sans-jp">
-              <th scope="row" class="align-middle" style="font-size: 1.3vw">選考方法</th>
-              <td class="align-middle" style="font-size: 1.3vw">書類選考、面接。</td>
+              <th scope="row" class="align-middle" style="font-size: 16px;">選考方法</th>
+              <td class="align-middle" style="font-size: 16px;">書類選考、面接。</td>
             </tr>
             <tr class="font-gray nano-sans-jp">
-              <th scope="row" class="align-middle" style="font-size: 1.3vw">諸手当通</th>
-              <td class="align-middle" style="font-size: 1.3vw">勤手当、残業手当、職能手当、資格取得一時金手当</td>
+              <th scope="row" class="align-middle" style="font-size: 16px;">諸手当通</th>
+              <td class="align-middle" style="font-size: 16px;">勤手当、残業手当、職能手当、資格取得一時金手当</td>
             </tr>
             <tr class="font-gray nano-sans-jp">
-              <th scope="row" class="align-middle" style="font-size: 1.3vw">賞与</th>
-              <td class="align-middle" style="font-size: 1.3vw">業績により支給</td>
+              <th scope="row" class="align-middle" style="font-size: 16px;">賞与</th>
+              <td class="align-middle" style="font-size: 16px;">業績により支給</td>
             </tr>
             <tr class="font-gray nano-sans-jp">
-              <th scope="row" class="align-middle" style="font-size: 1.3vw">勤務地</th>
-              <td class="align-middle" style="font-size: 1.3vw">顧客オフィス</td>
+              <th scope="row" class="align-middle" style="font-size: 16px;">勤務地</th>
+              <td class="align-middle" style="font-size: 16px;">顧客オフィス</td>
             </tr>
             <tr class="font-gray nano-sans-jp">
-              <th scope="row" class="align-middle" style="font-size: 1.3vw">勤務時間</th>
-              <td class="align-middle" style="font-size: 1.3vw">09:00～18:00</td>
+              <th scope="row" class="align-middle" style="font-size: 16px;">勤務時間</th>
+              <td class="align-middle" style="font-size: 16px;">09:00～18:00</td>
             </tr>
             <tr class="font-gray nano-sans-jp">
-              <th scope="row" class="align-middle" style="font-size: 1.3vw">福利厚生</th>
-              <td class="align-middle" style="font-size: 1.3vw">各種社会保険完備（雇用保険・労災保険・健康保険・厚生年金）</td>
+              <th scope="row" class="align-middle" style="font-size: 16px;">福利厚生</th>
+              <td class="align-middle" style="font-size: 16px;">各種社会保険完備（雇用保険・労災保険・健康保険・厚生年金）</td>
             </tr>
             <tr class="font-gray nano-sans-jp">
-              <th scope="row" class="align-middle" style="font-size: 1.3vw">休日休暇</th>
-              <td class="align-middle" style="font-size: 1.3vw">完全週休2日制（土・日）祝日 、夏季・年末年始・有給・慶弔・特別休暇</td>
+              <th scope="row" class="align-middle" style="font-size: 16px;">休日休暇</th>
+              <td class="align-middle" style="font-size: 16px;">完全週休2日制（土・日）祝日 、夏季・年末年始・有給・慶弔・特別休暇</td>
             </tr>
             </tbody>
           </table>
         </div>
       </div>
 
+
+    <div class="body-content a-table" style="margin-top: -1px; padding-top: 1px; padding-bottom: 30px; width: 90%">
+      <div class="a-table w-100 container" style="padding-left:1%; text-align: start; margin-top: 20px; width: 90%">
+        <table class="a-table table">
+          <tbody >
+          <tr class="font-gray nano-sans-jp">
+            <td class="align-middle" style="font-size: 14px"> <span style="font-weight: bold; font-size: 20px;">応募資格</span> <br>
+              <span style="font-weight: normal; font-size: 14px;">専門大学以上</span></td>
+          </tr>
+          <tr class="font-gray nano-sans-jp">
+            <td class="align-middle" style="font-size: 14px"> <span style="font-weight: bold; font-size: 20px;">募集職種</span><br>
+              <span style="font-weight: normal; font-size: 14px;">プログラマ(SE候補)</span></td>
+          </tr>
+          <tr class="font-gray nano-sans-jp">
+            <td class="align-middle" style="font-size: 14px"> <span style="font-weight: bold; font-size: 20px;">仕事内容</span><br>
+              <span style="font-weight: normal; font-size: 14px;">お客様先に常駐し、主にシステムの開発・構築業務や、管理業務を行います。</span></td>
+          </tr>
+          <tr class="font-gray nano-sans-jp">
+            <td class="align-middle" style="font-size: 14px"> <span style="font-weight: bold; font-size: 20px;">教育制度</span><br>
+              <span style="font-weight: normal; font-size: 14px;">社内研修や配属先でのOJT</span></td>
+          </tr>
+          <tr class="font-gray nano-sans-jp">
+            <td class="align-middle" style="font-size: 14px"> <span style="font-weight: bold; font-size: 20px;">人物像</span><br>
+              <span style="font-weight: normal; font-size: 14px;">社会人としてのモラル、<br>責任感とやる気の有る方。</span></td>
+          </tr>
+          <tr class="font-gray nano-sans-jp">
+            <td class="align-middle" style="font-size: 14px"> <span style="font-weight: bold; font-size: 20px;">給与</span><br>
+              <span style="font-weight: normal; font-size: 14px;">基本給/能力ポイント給、<br>時間外手当（交通費、全額支給）</span></td>
+          </tr>
+          <tr class="font-gray nano-sans-jp">
+            <td class="align-middle" style="font-size: 14px"> <span style="font-weight: bold; font-size: 20px;">選考方法</span><br>
+              <span style="font-weight: normal; font-size: 14px;">書類選考、面接。</span></td>
+          </tr>
+          <tr class="font-gray nano-sans-jp">
+            <td class="align-middle" style="font-size: 14px"> <span style="font-weight: bold; font-size: 20px;">諸手当通</span><br>
+              <span style="font-weight: normal; font-size: 14px;">勤手当、残業手当、<br>職能手当、資格取得一時金手当</span></td>
+          </tr>
+          <tr class="font-gray nano-sans-jp">
+            <td class="align-middle" style="font-size: 14px"> <span style="font-weight: bold; font-size: 20px;">賞与</span><br>
+              <span style="font-weight: normal; font-size: 14px;">業績により支給</span></td>
+          </tr>
+          <tr class="font-gray nano-sans-jp">
+            <td class="align-middle" style="font-size: 14px"> <span style="font-weight: bold; font-size: 20px;">勤務地</span><br>
+              <span style="font-weight: normal; font-size: 14px;">顧客オフィス</span></td>
+          </tr>
+          <tr class="font-gray nano-sans-jp">
+            <td class="align-middle" style="font-size: 14px"> <span style="font-weight: bold; font-size: 20px;">勤務時間</span><br>
+              <span style="font-weight: normal; font-size: 14px;">顧09:00～18:00</span></td>
+          </tr>
+          <tr class="font-gray nano-sans-jp">
+            <td class="align-middle" style="font-size: 14px"> <span style="font-weight: bold; font-size: 20px;">福利厚生</span><br>
+              <span style="font-weight: normal; font-size: 14px;">各種社会保険完備<br>(雇用保険・労災保険・健康保険・厚生年金)</span></td>
+          </tr>
+          <tr class="font-gray nano-sans-jp">
+            <td class="align-middle" style="font-size: 14px"> <span style="font-weight: bold; font-size: 20px;">休日休暇</span><br>
+              <span style="font-weight: normal; font-size: 14px;">完全週休2日制（土・日）祝日 、<br>夏季・年末年始・有給・慶弔・特別休暇</span></td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
 
   </main>
 

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>History</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 0;
+            background-color: #333;
+            color: white;
+        }
+
+        .timeline {
+            position: relative;
+            padding: 50px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .timeline-line {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 4px;
+            height: 0;
+            background-color: #333;
+            transform: translateX(-50%);
+            opacity: 0;
+            animation: draw-line 2s forwards;
+        }
+
+        @keyframes draw-line {
+            to {
+                opacity: 1;
+                height: 100%;
+            }
+        }
+
+        .timeline-item {
+            position: relative;
+            width: 45%;
+            background-color: white;
+            padding: 20px;
+            margin: 20px 0;
+            margin-top: 150px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            top: 20px;
+            width: 20px;
+            height: 20px;
+            background-color: #333;
+            border-radius: 50%;
+        }
+
+        .timeline-item:nth-child(odd) {
+            left: calc(50% + 20px);
+            transform: translateX(50%);
+        }
+
+        .timeline-item:nth-child(even) {
+            left: calc(50% - 60%);
+            transform: translateX(-50%);
+        }
+
+        .timeline-item.visible {
+            opacity: 1;
+            transform: translateY(0) translateX(0);
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Our Company History</h1>
+</header>
+<section class="timeline">
+    <div class="timeline-line"></div>
+    <div class="timeline-item" data-year="2020">
+        <h2>2020</h2>
+        <p>Company founded.</p>
+    </div>
+    <div class="timeline-item" data-year="2021">
+        <h2>2021</h2>
+        <p>First product launched.</p>
+    </div>
+    <div class="timeline-item" data-year="2022">
+        <h2>2022</h2>
+        <p>Expanded to new markets.</p>
+    </div>
+    <div class="timeline-item" data-year="2023">
+        <h2>2023</h2>
+        <p>Reached 1 million users.</p>
+    </div>
+    <div class="timeline-item" data-year="2022">
+        <h2>2022</h2>
+        <p>Expanded to new markets.</p>
+    </div>
+    <div class="timeline-item" data-year="2023">
+        <h2>2023</h2>
+        <p>Reached 1 million users.</p>
+    </div>
+
+    <div style="padding-bottom: 300px"></div>
+</section>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const items = document.querySelectorAll('.timeline-item');
+
+        const isVisible = (el) => {
+            const rect = el.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+            );
+        };
+
+        const handleScroll = () => {
+            items.forEach(item => {
+                if (isVisible(item)) {
+                    item.classList.add('visible');
+                }
+            });
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        handleScroll(); // 초기 로드 시 호출하여 뷰포트에 있는 항목을 표시
+    });
+</script>
+</body>
+</html>

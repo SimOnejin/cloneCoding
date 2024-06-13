@@ -1,12 +1,18 @@
 // About navbar
+
+var modal;
+var btn;
+var span;
+
+
 document.addEventListener("DOMContentLoaded", function() {
   fetch('navbar.html')
     .then(response => response.text())
     .then(data => {
       document.getElementById('navbar').innerHTML = data;
-      var modal = document.getElementById("myModal");
-      var btn = document.getElementById("intro");
-      var span = document.getElementsByClassName("close")[0];
+      modal = document.getElementById("myModal");
+      btn = document.getElementById("intro");
+      span = document.getElementsByClassName("close")[0];
       btn.onclick = function() {
         modal.style.display = "block";
       }
@@ -22,3 +28,11 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     });
 });
+function handleScroll() {
+    // Show button when scrolled down 100px from top
+    if (rootElement.scrollTop > 100) {
+        scrollToTopBtn.style.display = "block";
+    } else {
+        scrollToTopBtn.style.display = "none";
+    }
+}

@@ -136,13 +136,14 @@ span {
   max-height: 59.99px;
   max-width: 298.23px;
   height: 100%;
-  width: 100%;
+  width: auto;
 }
 
 @media (max-width: 768px) {
   .responsive-image {
     max-height: 50px;
     max-width: 250px;
+    width: auto;
   }
 }
 
@@ -150,5 +151,6 @@ span {
   .responsive-image {
     max-height: 40px;
     max-width: 200px;
+    width: auto;
   }
 }

@@ -76,6 +76,8 @@ document.addEventListener("DOMContentLoaded", function() {
         initialPlayOverlay.classList.add('hidden');
     });
 });
+
+//For Tab's Logo
 document.addEventListener("DOMContentLoaded", function() {
     const link = document.createElement('link');
     link.rel = 'icon';

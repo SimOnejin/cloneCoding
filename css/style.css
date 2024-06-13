@@ -403,7 +403,7 @@ textarea {
   background-size: cover; /* 이미지 크기를 컨테이너 크기에 맞게 조정 */
   background-position: center; /* 이미지를 중앙에 위치 */
   background-repeat: no-repeat; /* 이미지 반복하지 않음 */
-  display: flex;
+  /*display: flex;*/
   justify-content: center;
   align-items: center;
   color: white;

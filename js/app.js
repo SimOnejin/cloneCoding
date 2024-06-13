@@ -37,3 +37,42 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
+//Effect Sound
+document.addEventListener("DOMContentLoaded", function() {
+    const audio = document.getElementById('background-music');
+    const startButton = document.getElementById('start-button');
+    const initialPlayOverlay = document.getElementById('initial-play');
+    let isPlaying = false;
+    let scrollTimeout;
+
+    const playMusic = () => {
+        if (!isPlaying) {
+            audio.play().then(() => {
+                isPlaying = true;
+            }).catch(error => {
+                console.error("Error playing audio:", error);
+            });
+        }
+    };
+
+    const pauseMusic = () => {
+        if (isPlaying) {
+            audio.pause();
+            isPlaying = false;
+        }
+    };
+
+    window.addEventListener('scroll', () => {
+        if (initialPlayOverlay.classList.contains('hidden')) {
+            clearTimeout(scrollTimeout);
+            playMusic();
+            scrollTimeout = setTimeout(() => {
+                pauseMusic();
+            }, 100); // 스크롤이 멈춘 후 100ms 후에 음악 일시 정지
+        }
+    });
+
+    startButton.addEventListener('click', () => {
+        initialPlayOverlay.classList.add('hidden');
+    });
+});

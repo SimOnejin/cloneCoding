@@ -4,7 +4,6 @@ var modal;
 var btn;
 var span;
 
-
 document.addEventListener("DOMContentLoaded", function() {
   fetch('navbar.html')
     .then(response => response.text())
@@ -26,13 +25,5 @@ document.addEventListener("DOMContentLoaded", function() {
           modal.style.display = "none";
         }
       }
-    });
+    })
 });
-function handleScroll() {
-    // Show button when scrolled down 100px from top
-    if (rootElement.scrollTop > 100) {
-        scrollToTopBtn.style.display = "block";
-    } else {
-        scrollToTopBtn.style.display = "none";
-    }
-}

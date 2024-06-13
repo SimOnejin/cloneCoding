@@ -3,7 +3,6 @@
 var modal;
 var btn;
 var span;
-let rootElement;
 
 document.addEventListener("DOMContentLoaded", function() {
     fetch('navbar.html')
@@ -39,12 +38,19 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
 });
-function handleScroll() {
-    // Show button when scrolled down 100px from top
-
-    if (rootElement.scrollTop > 100) {
-        btn.style.display = "block";
-    } else {
-        btn.style.display = "none";
-    }
-}
+// function handleScroll() {
+//     // Show button when scrolled down 100px from top
+//
+//     if (rootElement.scrollTop > 100) {
+//         btn.style.display = "block";
+//     } else {
+//         btn.style.display = "none";
+//     }
+// }
+//       window.onclick = function(event) {
+//         if (event.target == modal) {
+//           modal.style.display = "none";
+//         }
+//       }
+//     })
+// });

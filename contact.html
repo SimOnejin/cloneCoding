@@ -14,12 +14,32 @@
   <script src="js/footer.js" defer></script>
 
 
+  <style>
+    .screen {
+      margin-top: -1px;
+      padding-bottom: 50px;
+      padding-left:15%;
+    }
 
+    @media (max-width: 500px) {
+      .screen {
+        margin-top: 10px;
+        padding-bottom: 50px;
+        width: 95%;
+        padding-left:10%;
+      }
+    }
 
-  <script>
-
-
-  </script>
+    @media (min-width: 501px) {
+      .screen {
+        margin-top: 20px;
+        padding-top: 20px;
+        padding-bottom: 50px;
+        padding-left:15%;
+        width: 85%;
+      }
+    }
+  </style>
 
 
 </head>
@@ -39,9 +59,9 @@
     </p>
     <hr>
 
-    <div class="body-content" style="margin-top: -1px; padding-top: 20px; padding-bottom: 50px; padding-left:15%; width: 85%;">
-      <div style=" text-align: start; margin-top: 20px;">
-        <p class="noto-sans-jp font-gray" style="margin-bottom: 40px; font-size: 16px; font-weight: normal">ご質問などありましたら、以下お問い合わせフォームよりお気軽にご連絡ください。</p>
+    <div class="body-content screen">
+      <div style="text-align: start;">
+        <p class="noto-sans-jp font-gray" style="margin-bottom: 40px; font-size: 16px; font-weight: normal; width: 95%">ご質問などありましたら、以下お問い合わせフォームよりお気軽にご連絡ください。</p>
 
         <div class="input-group" style="text-align: left;">
           <p style="width: auto; height: 20px; font-size: 16px; font-weight: normal;" class="noto-sans-jp font-gray">

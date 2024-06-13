@@ -5,14 +5,14 @@
     <title>History</title>
 
     <style>
-        body {
+        #body1 {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f0f0f0;
         }
 
-        header {
+        #header1 {
             text-align: center;
             padding: 50px 0;
             background-color: #333;
@@ -51,7 +51,7 @@
             background-color: white;
             padding: 20px;
             margin: 20px 0;
-            margin-top: 150px;
+            margin-top: 100px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             opacity: 0;
@@ -85,9 +85,10 @@
         }
     </style>
 </head>
-<body>
-<header>
-    <h1>Our Company History</h1>
+<body id="body1">
+<header id="header1">
+    <h1>会社沿革</h1>
+    <h4>Our Company History</h4>
 </header>
 <section class="timeline">
     <div class="timeline-line"></div>
@@ -116,7 +117,7 @@
         <p>Reached 1 million users.</p>
     </div>
 
-    <div style="padding-bottom: 300px"></div>
+<!--    <div style="padding-bottom: 300px"></div>-->
 </section>
 <script>
     document.addEventListener('DOMContentLoaded', function() {

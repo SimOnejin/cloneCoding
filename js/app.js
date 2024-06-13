@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", function() {
   let observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
@@ -44,6 +45,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const initialPlayOverlay = document.getElementById('initial-play');
     let isPlaying = false;
     let scrollTimeout;
+    var popupOverlay = document.getElementById('initial-play');
+    var popupContent = document.querySelector('.popup-content');
 
     const playMusic = () => {
         if (!isPlaying) {
@@ -75,6 +78,13 @@ document.addEventListener("DOMContentLoaded", function() {
     startButton.addEventListener('click', () => {
         initialPlayOverlay.classList.add('hidden');
     });
+    // 오버레이 클릭 시 팝업 닫기
+    popupOverlay.addEventListener('click', function(event) {
+        // 클릭한 대상이 팝업 콘텐츠가 아니면 팝업 닫기
+        if (!popupContent.contains(event.target)) {
+            initialPlayOverlay.classList.add('hidden');
+        }
+    });
 });
 
 //For Tab's Logo
@@ -85,3 +95,21 @@ document.addEventListener("DOMContentLoaded", function() {
     link.href = 'img/github-mark/github-mark.png'; // 실제 이미지 경로로 변경하세요
     document.head.appendChild(link);
 });
+
+
+// //initial-play Can touch Anywhere
+// document.addEventListener("DOMContentLoaded", function() {
+//     var popupOverlay = document.getElementById('initial-play');
+//     var popupContent = document.querySelector('.popup-content');
+//     var startButton = document.getElementById('start-button');
+//
+//     // 팝업 닫기 함수
+//     function closePopup() {
+//         popupOverlay.style.display = 'none';
+//     }
+//
+//     // Start 버튼 클릭 시 팝업 닫기
+//     startButton.addEventListener('click', closePopup);
+//
+//
+// });

@@ -50,20 +50,20 @@ document.addEventListener("DOMContentLoaded", function() {
             }
 
             // 스크롤에 따라 버튼 표시/숨김 처리fsdafas
-            // window.addEventListener('scroll', function() {
-            //     if (document.documentElement.scrollTop > 100) {
-            //         btn.style.display = "block";
-            //     } else {
-            //         btn.style.display = "none";
-            //     }
-            // });
+            window.addEventListener('scroll', function() {
+                if (document.documentElement.scrollTop > 100) {
+                    btn.style.display = "block";
+                } else {
+                    btn.style.display = "none";
+                }
+            });
 
             // 초기 로드 시 스크롤 위치에 따라 버튼 표시/숨김 처리
-            // if (document.documentElement.scrollTop > 100) {
-            //     btn.style.display = "block";
-            // } else {
-            //     btn.style.display = "none";
-            // }
+            if (document.documentElement.scrollTop > 100) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
         })
         .catch(error => console.error('Error loading navbar:', error));
 });

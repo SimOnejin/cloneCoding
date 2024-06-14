@@ -64,6 +64,6 @@ document.addEventListener("DOMContentLoaded", function() {
         //     } else {
         //         btn.style.display = "none";
         //     }
-        // })
+        })
         .catch(error => console.error('Error loading navbar:', error));
 });

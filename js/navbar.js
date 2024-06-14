@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
             }
 
-            // 스크롤에 따라 버튼 표시/숨김 처리fsdafas
+            // 스크롤에 따라 버튼 표시/숨김 처리fsdafas11111111111
             // window.addEventListener('scroll', function() {
             //     if (document.documentElement.scrollTop > 100) {
             //         btn.style.display = "block";

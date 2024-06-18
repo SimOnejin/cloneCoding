@@ -246,19 +246,37 @@
           <div id="question" style="margin-bottom: 10%">
             <button class="faq-button" onclick="toggleDropdown()">QnA</button>
 
-            <div id="faqDropdown" class="dropdown">
-              <div class="dropdown-item">
-                <span class="noto-sans-jp" style="font-weight: bold">交通費支援について</span><br>
-                <span class="noto-sans-jp" style="font-weight: normal">通勤のための定期券を提供します。</span>
-              </div>
-              <div class="dropdown-item">질문 2: <br>여기에 질문 2의 내용을 적습니다.</div>
-              <div class="dropdown-item">질문 3: <br>여기에 질문 3의 내용을 적습니다.</div>
 
-              <h2 style="margin: 15px">Another Questions are...</h2>
-              <form id="emailForm">
-                <textarea id="message" placeholder="Your Message" required style="width: 100%; padding: 3%; margin: auto; border: 1px solid #ddd; border-radius: 15px;"></textarea>
-                <button type="button" style="width: 100%; background-color: #393c44; color: white; padding: 10px 20px; border: none; border-radius: 5px; font-size: 16px; text-align: center; cursor: pointer;" onclick="openEmailClient()">Submit</button>
-              </form>
+            <div id="faqDropdown" class="dropdown d-flex justify-content-center">
+              <div style="align-items: center; width: 90%">
+                <br>
+                <div class="dropdown-item" style="text-align: left">
+                  <span class="noto-sans-jp" style="font-weight: bold;">交通費支援について</span>
+                  <span class="noto-sans-jp" style="font-weight: normal">通勤のための定期券を提供します。</span>
+                </div>
+                <br>
+                <hr>
+                <br>
+                <div class="dropdown-item" style="text-align: left">
+                  <span class="noto-sans-jp" style="font-weight: bold">交通費支援について</span><br>
+                  <span class="noto-sans-jp" style="font-weight: normal">通勤のための定期券を提供します。</span>
+                </div>
+                <br>
+                <hr>
+                <br>
+                <div class="dropdown-item" style="text-align: left">
+                  <span class="noto-sans-jp" style="font-weight: bold">交通費支援について</span><br>
+                  <span class="noto-sans-jp" style="font-weight: normal">通勤のための定期券を提供します。</span>
+                </div>
+                <br>
+                <hr>
+
+                <h2 style="margin: 15px">Another Questions are...</h2>
+                <form id="emailForm">
+                  <textarea id="message" placeholder="Your Message" required style="width: 100%; padding: 3%; margin: auto; border: 1px solid #ddd; border-radius: 15px;"></textarea>
+                  <button type="button" style="width: 100%; background-color: #393c44; color: white; padding: 10px 20px; border: none; border-radius: 5px; font-size: 16px; text-align: center; cursor: pointer;" onclick="openEmailClient()">Submit</button>
+                </form>
+              </div>
 
               <script>
                 function openEmailClient() {

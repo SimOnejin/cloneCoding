@@ -140,6 +140,11 @@ textarea {
   width: auto;
 }
 
+.mobile-body {
+  margin-left: -5%;
+  margin-right: -5%
+}
+
 /*
  * Hide visually and from screen readers, but maintain layout
  */

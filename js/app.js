@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const link = document.createElement('link');
     link.rel = 'icon';
     link.type = 'image/png';
-    link.href = 'img/github-mark/github-mark.png'; // 실제 이미지 경로로 변경하세요
+    link.href = 'img/github-mark/github-mark.png';
     document.head.appendChild(link);
 });
 

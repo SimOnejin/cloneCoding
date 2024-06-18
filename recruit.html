@@ -39,6 +39,46 @@
       }
     }
 
+    .dropdown {
+     display: none;
+     margin-top: 10px;
+     border: 1px solid #ddd;
+     border-radius: 5px;
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .dropdown-item {
+      padding: 20px;
+      background-color: #f9f9f9;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .dropdown-item:last-child {
+      border-bottom: none;
+    }
+
+    .faq-button {
+      background-color: #ffffff;
+      color: black;
+      font-weight: bold;
+      padding: 3vw 0vw;
+      width: 100%;
+      border: 10px;
+      border-color: black;
+      border-radius: 2px;
+      font-size: 25px;
+      cursor: pointer;
+      /*box-shadow: #808081 1px 1px 10px;*/
+    }
+    .faq-button:hover{
+      background-color: #f5f5f5;
+      /*cursor: auto;*/
+    }
+    /*textarea{*/
+    /*  border-radius: 10px;*/
+    /*  width: 100%;*/
+    /*}*/
+
   </style>
 
 
@@ -127,158 +167,123 @@
       </div>
     </div>
 
+
+
+    <!-- Mobile Size Screen-->
     <div class="page-body mobile-body">
-
-    <div class="a-table w-100" style="margin-top: -1px; padding-top: 1px; padding-bottom: 30px;">
-      <div class="a-table justify-content-center " style="text-align: start; margin-top: 20px;">
-        <table class="a-table table">
-          <tbody >
-          <tr class="font-gray nano-sans-jp">
-            <td class="align-middle" style="font-size: 14px"> <span style="font-weight: bold; font-size: 20px;">応募資格</span> <br>
-              <span style="font-weight: normal; font-size: 14px;">専門大学以上</span></td>
-          </tr>
-          <tr class="font-gray nano-sans-jp">
-            <td class="align-middle" style="font-size: 14px"> <span style="font-weight: bold; font-size: 20px;">募集職種</span><br>
-              <span style="font-weight: normal; font-size: 14px;">プログラマ(SE候補)</span></td>
-          </tr>
-          <tr class="font-gray nano-sans-jp">
-            <td class="align-middle" style="font-size: 14px"> <span style="font-weight: bold; font-size: 20px;">仕事内容</span><br>
-              <span style="font-weight: normal; font-size: 14px;">お客様先に常駐し、主にシステムの開発・構築業務や、管理業務を行います。</span></td>
-          </tr>
-          <tr class="font-gray nano-sans-jp">
-            <td class="align-middle" style="font-size: 14px"> <span style="font-weight: bold; font-size: 20px;">教育制度</span><br>
-              <span style="font-weight: normal; font-size: 14px;">社内研修や配属先でのOJT</span></td>
-          </tr>
-          <tr class="font-gray nano-sans-jp">
-            <td class="align-middle" style="font-size: 14px"> <span style="font-weight: bold; font-size: 20px;">人物像</span><br>
-              <span style="font-weight: normal; font-size: 14px;">社会人としてのモラル、<br>責任感とやる気の有る方。</span></td>
-          </tr>
-          <tr class="font-gray nano-sans-jp">
-            <td class="align-middle" style="font-size: 14px"> <span style="font-weight: bold; font-size: 20px;">給与</span><br>
-              <span style="font-weight: normal; font-size: 14px;">基本給/能力ポイント給、<br>時間外手当（交通費、全額支給）</span></td>
-          </tr>
-          <tr class="font-gray nano-sans-jp">
-            <td class="align-middle" style="font-size: 14px"> <span style="font-weight: bold; font-size: 20px;">選考方法</span><br>
-              <span style="font-weight: normal; font-size: 14px;">書類選考、面接。</span></td>
-          </tr>
-          <tr class="font-gray nano-sans-jp">
-            <td class="align-middle" style="font-size: 14px"> <span style="font-weight: bold; font-size: 20px;">諸手当通</span><br>
-              <span style="font-weight: normal; font-size: 14px;">勤手当、残業手当、<br>職能手当、資格取得一時金手当</span></td>
-          </tr>
-          <tr class="font-gray nano-sans-jp">
-            <td class="align-middle" style="font-size: 14px"> <span style="font-weight: bold; font-size: 20px;">賞与</span><br>
-              <span style="font-weight: normal; font-size: 14px;">業績により支給</span></td>
-          </tr>
-          <tr class="font-gray nano-sans-jp">
-            <td class="align-middle" style="font-size: 14px"> <span style="font-weight: bold; font-size: 20px;">勤務地</span><br>
-              <span style="font-weight: normal; font-size: 14px;">顧客オフィス</span></td>
-          </tr>
-          <tr class="font-gray nano-sans-jp">
-            <td class="align-middle" style="font-size: 14px"> <span style="font-weight: bold; font-size: 20px;">勤務時間</span><br>
-              <span style="font-weight: normal; font-size: 14px;">顧09:00～18:00</span></td>
-          </tr>
-          <tr class="font-gray nano-sans-jp">
-            <td class="align-middle" style="font-size: 14px"> <span style="font-weight: bold; font-size: 20px;">福利厚生</span><br>
-              <span style="font-weight: normal; font-size: 14px;">各種社会保険完備<br>(雇用保険・労災保険・健康保険・厚生年金)</span></td>
-          </tr>
-          <tr class="font-gray nano-sans-jp">
-            <td class="align-middle" style="font-size: 14px"> <span style="font-weight: bold; font-size: 20px;">休日休暇</span><br>
-              <span style="font-weight: normal; font-size: 14px;">完全週休2日制（土・日）祝日 、<br>夏季・年末年始・有給・慶弔・特別休暇</span></td>
-          </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-    <!--End of A-Table-->
-
-
-    <div id="submit_to_recruit" style="display: flex; position: relative; left: 15%; width: 85%">
-      <a href="apply.html" style="width: 85%; background-color: #393c44; color: white; padding: 10px 20px; margin-bottom: 5%; border: none; border-radius: 5px; font-size: 16px; text-align: center; cursor: pointer;">
-        志願
-      </a>
-
-    </div>
-    <!--End of submit to recruit-->
-
-
-    <div id="question" style="margin-bottom: 10%">
-      <button class="faq-button" onclick="toggleDropdown()">QnA</button>
-
-      <div id="faqDropdown" class="dropdown">
-        <div class="dropdown-item">질문 1: 교통비 지원해주시나요? <br>출퇴근을 위한 정기권을 제공합니다.</div>
-        <div class="dropdown-item">질문 2: <br>여기에 질문 2의 내용을 적습니다.</div>
-        <div class="dropdown-item">질문 3: <br>여기에 질문 3의 내용을 적습니다.</div>
-
-        <h2 style="margin: 15px">Another Questions are...</h2>
-        <form id="emailForm">
-          <textarea id="message" placeholder="Your Message" required style="width: 100%; padding: 3%; margin: auto; border: 1px solid #ddd; border-radius: 15px;"></textarea>
-          <button type="button" style="width: 100%; background-color: #393c44; color: white; padding: 10px 20px; border: none; border-radius: 5px; font-size: 16px; text-align: center; cursor: pointer;" onclick="openEmailClient()">Submit</button>
-        </form>
-
-        <script>
-          function openEmailClient() {
-            var message = document.getElementById('message').value;
-            var mailtoLink = 'mailto:simwj0227@gmail.com?subject=Email Subject&body=' + encodeURIComponent(message);
-            window.location.href = mailtoLink;
-          }
-        </script>
+      <div class="a-table w-100" style="margin-top: -1px; padding-top: 1px; padding-bottom: 30px;">
+        <div class="a-table justify-content-center " style="text-align: start; margin-top: 20px;">
+          <table class="a-table table">
+            <tbody >
+            <tr class="font-gray nano-sans-jp">
+              <td class="align-middle" style="font-size: 14px"> <span style="font-weight: bold; font-size: 20px;">応募資格</span> <br>
+                <span style="font-weight: normal; font-size: 14px;">専門大学以上</span></td>
+            </tr>
+            <tr class="font-gray nano-sans-jp">
+              <td class="align-middle" style="font-size: 14px"> <span style="font-weight: bold; font-size: 20px;">募集職種</span><br>
+                <span style="font-weight: normal; font-size: 14px;">プログラマ(SE候補)</span></td>
+            </tr>
+            <tr class="font-gray nano-sans-jp">
+              <td class="align-middle" style="font-size: 14px"> <span style="font-weight: bold; font-size: 20px;">仕事内容</span><br>
+                <span style="font-weight: normal; font-size: 14px;">お客様先に常駐し、主にシステムの開発・構築業務や、管理業務を行います。</span></td>
+            </tr>
+            <tr class="font-gray nano-sans-jp">
+              <td class="align-middle" style="font-size: 14px"> <span style="font-weight: bold; font-size: 20px;">教育制度</span><br>
+                <span style="font-weight: normal; font-size: 14px;">社内研修や配属先でのOJT</span></td>
+            </tr>
+            <tr class="font-gray nano-sans-jp">
+              <td class="align-middle" style="font-size: 14px"> <span style="font-weight: bold; font-size: 20px;">人物像</span><br>
+                <span style="font-weight: normal; font-size: 14px;">社会人としてのモラル、<br>責任感とやる気の有る方。</span></td>
+            </tr>
+            <tr class="font-gray nano-sans-jp">
+              <td class="align-middle" style="font-size: 14px"> <span style="font-weight: bold; font-size: 20px;">給与</span><br>
+                <span style="font-weight: normal; font-size: 14px;">基本給/能力ポイント給、<br>時間外手当（交通費、全額支給）</span></td>
+            </tr>
+            <tr class="font-gray nano-sans-jp">
+              <td class="align-middle" style="font-size: 14px"> <span style="font-weight: bold; font-size: 20px;">選考方法</span><br>
+                <span style="font-weight: normal; font-size: 14px;">書類選考、面接。</span></td>
+            </tr>
+            <tr class="font-gray nano-sans-jp">
+              <td class="align-middle" style="font-size: 14px"> <span style="font-weight: bold; font-size: 20px;">諸手当通</span><br>
+                <span style="font-weight: normal; font-size: 14px;">勤手当、残業手当、<br>職能手当、資格取得一時金手当</span></td>
+            </tr>
+            <tr class="font-gray nano-sans-jp">
+              <td class="align-middle" style="font-size: 14px"> <span style="font-weight: bold; font-size: 20px;">賞与</span><br>
+                <span style="font-weight: normal; font-size: 14px;">業績により支給</span></td>
+            </tr>
+            <tr class="font-gray nano-sans-jp">
+              <td class="align-middle" style="font-size: 14px"> <span style="font-weight: bold; font-size: 20px;">勤務地</span><br>
+                <span style="font-weight: normal; font-size: 14px;">顧客オフィス</span></td>
+            </tr>
+            <tr class="font-gray nano-sans-jp">
+              <td class="align-middle" style="font-size: 14px"> <span style="font-weight: bold; font-size: 20px;">勤務時間</span><br>
+                <span style="font-weight: normal; font-size: 14px;">顧09:00～18:00</span></td>
+            </tr>
+            <tr class="font-gray nano-sans-jp">
+              <td class="align-middle" style="font-size: 14px"> <span style="font-weight: bold; font-size: 20px;">福利厚生</span><br>
+                <span style="font-weight: normal; font-size: 14px;">各種社会保険完備<br>(雇用保険・労災保険・健康保険・厚生年金)</span></td>
+            </tr>
+            <tr class="font-gray nano-sans-jp">
+              <td class="align-middle" style="font-size: 14px"> <span style="font-weight: bold; font-size: 20px;">休日休暇</span><br>
+                <span style="font-weight: normal; font-size: 14px;">完全週休2日制（土・日）祝日 、<br>夏季・年末年始・有給・慶弔・特別休暇</span></td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
 
-      <style>
-        .dropdown {
-          display: none;
-          margin-top: 10px;
-          border: 1px solid #ddd;
-          border-radius: 5px;
-          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
 
-        .dropdown-item {
-          padding: 20px;
-          background-color: #f9f9f9;
-          border-bottom: 1px solid #ddd;
-        }
 
-        .dropdown-item:last-child {
-          border-bottom: none;
-        }
+    <!--Apply Body-->
+    <div class="page-body">
+      <div class="w-100" style="width: 85%;">
+        <div class="100%">
+          <div id="submit_to_recruit" style="display: flex; position: relative;">
+            <a href="apply.html" style="width:100%; background-color: #393c44; color: white; padding: 10px 20px; margin-bottom: 5%; border: none; border-radius: 5px; font-size: 16px; text-align: center; cursor: pointer;">志願</a>
+          </div>
 
-        .faq-button {
-          background-color: #ffffff;
-          color: black;
-          font-weight: bold;
-          padding: 3vw 0vw;
-          width: 100%;
-          border: 10px;
-          border-color: black;
-          border-radius: 2px;
-          font-size: 25px;
-          cursor: pointer;
-          /*box-shadow: #808081 1px 1px 10px;*/
-        }
-        .faq-button:hover{
-          background-color: #f5f5f5;
-          /*cursor: auto;*/
-        }
-        /*textarea{*/
-        /*  border-radius: 10px;*/
-        /*  width: 100%;*/
-        /*}*/
-      </style>
-      <script>
-        function toggleDropdown() {
-          var dropdown = document.getElementById("faqDropdown");
-          if (dropdown.style.display === "none" || dropdown.style.display === "") {
-            dropdown.style.display = "block";
-          } else {
-            dropdown.style.display = "none";
-          }
-        }
-      </script>
+          <div id="question" style="margin-bottom: 10%">
+            <button class="faq-button" onclick="toggleDropdown()">QnA</button>
+
+            <div id="faqDropdown" class="dropdown">
+              <div class="dropdown-item">
+                <span class="noto-sans-jp" style="font-weight: bold">交通費支援について</span><br>
+                <span class="noto-sans-jp" style="font-weight: normal">通勤のための定期券を提供します。</span>
+              </div>
+              <div class="dropdown-item">질문 2: <br>여기에 질문 2의 내용을 적습니다.</div>
+              <div class="dropdown-item">질문 3: <br>여기에 질문 3의 내용을 적습니다.</div>
+
+              <h2 style="margin: 15px">Another Questions are...</h2>
+              <form id="emailForm">
+                <textarea id="message" placeholder="Your Message" required style="width: 100%; padding: 3%; margin: auto; border: 1px solid #ddd; border-radius: 15px;"></textarea>
+                <button type="button" style="width: 100%; background-color: #393c44; color: white; padding: 10px 20px; border: none; border-radius: 5px; font-size: 16px; text-align: center; cursor: pointer;" onclick="openEmailClient()">Submit</button>
+              </form>
+
+              <script>
+                function openEmailClient() {
+                  var message = document.getElementById('message').value;
+                  var mailtoLink = 'mailto:simwj0227@gmail.com?subject=Email Subject&body=' + encodeURIComponent(message);
+                  window.location.href = mailtoLink;
+                }
+              </script>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <!--End of Question-->
 
+    <script>
+      function toggleDropdown() {
+        var dropdown = document.getElementById("faqDropdown");
+        if (dropdown.style.display === "none" || dropdown.style.display === "") {
+          dropdown.style.display = "block";
+        } else {
+          dropdown.style.display = "none";
+        }
+      }
+    </script>
+  <!--End of Question-->
 
   </main>
 

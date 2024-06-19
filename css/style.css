@@ -511,6 +511,16 @@ textarea {
     font-weight: bold;
     margin-bottom: -20px;
   }
+
+  .company-ideology {
+    font-size: 15px;
+    font-weight: normal;
+    text-align: center
+  }
+
+  .div-company-ideology {
+    padding: 5px;
+  }
 }
 
 @media (min-width: 501px) {
@@ -533,5 +543,15 @@ textarea {
     font-size: 50px;
     font-weight: bold;
     margin-bottom: -20px;
+  }
+
+  .company-ideology {
+    font-size: 30px;
+    font-weight: normal;
+    text-align: center
+  }
+
+  .div-company-ideology {
+    padding: 40px;
   }
 }

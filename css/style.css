@@ -140,10 +140,6 @@ textarea {
   width: auto;
 }
 
-.mobile-body {
-  margin-left: -5%;
-  margin-right: -5%
-}
 
 /*
  * Hide visually and from screen readers, but maintain layout
@@ -253,11 +249,6 @@ textarea {
     page-break-after: avoid;
   }
 }
-
-
-
-
-
 
 
 /*Onejin*/
@@ -423,13 +414,6 @@ textarea {
   /*filter: brightness(70%);*/
 }
 
-
-
-
-
-
-
-
 .music-controller {
   position: fixed;
   bottom: 20px;
@@ -485,4 +469,48 @@ textarea {
   padding: 10px 20px;
   cursor: pointer;
   font-size: 16px;
+}
+
+
+/*Mobile Screen CSS*/
+@media (max-width: 500px) {
+  tr {
+    height: 50px;
+  }
+  th. {
+    width: 100px;
+  }
+  .b-table {
+    display: none;
+  }
+  .mobile-body {
+    margin-left: -5%;
+    margin-right: -5%
+  }
+  .mobile-title {
+    font-size: 30px;
+    margin-top: 2%;
+  }
+
+  .mobile-map {
+    margin-top: -5px;
+    text-decoration: none;
+    color: black;
+    font-size: small;
+  }
+}
+
+@media (min-width: 501px) {
+  tr {
+    height: 80px;
+  }
+  .a-table {
+    display: none;
+  }
+  .mobile-map {
+    margin-top: -30px;
+    text-decoration: none;
+    color: black;
+    font-size: small;
+  }
 }

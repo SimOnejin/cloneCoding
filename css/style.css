@@ -166,6 +166,13 @@ textarea {
   clear: both;
 }
 
+.hr-style {
+  margin-top:30px;
+  height: 1px;
+  background-color: rgba(57,60,68,0.21);
+  border: none;
+}
+
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
@@ -484,8 +491,8 @@ textarea {
     display: none;
   }
   .mobile-body {
-    margin-left: -5%;
-    margin-right: -5%
+    margin-left: -10%;
+    margin-right: -10%
   }
   .mobile-title {
     font-size: 30px;

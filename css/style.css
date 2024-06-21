@@ -521,6 +521,10 @@ textarea {
   th. {
     width: 100px;
   }
+  .pc-footer-text {
+    font-size: 13px;
+    display: none;
+  }
   .b-table {
     display: none;
   }
@@ -584,6 +588,9 @@ textarea {
     display: none;
   }
 
+  .mobile-footer-text {
+    display: none;
+  }
   .mobile-map {
     margin-top: -30px;
     text-decoration: none;

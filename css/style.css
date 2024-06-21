@@ -500,6 +500,19 @@ textarea {
   height: 130px
 }
 
+.recruit-button-text {
+  width:100%;
+  background-color: #393c44;
+  color: white;
+  padding: 10px 20px;
+  margin-bottom: 5%;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+}
+
 /*Mobile Screen CSS*/
 @media (max-width: 500px) {
   tr {

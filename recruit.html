@@ -222,44 +222,45 @@
       <div class="w-100">
         <div class="justify-content-center">
           <div id="submit_to_recruit" style="display: flex; position: relative;">
-            <a href="apply.html" style="width:100%; background-color: #393c44; color: white; padding: 10px 20px; margin-bottom: 5%; border: none; border-radius: 5px; font-size: 16px; text-align: center; cursor: pointer;">志願</a>
+            <a class="font-gray noto-sans-jp recruit-button-text" href="apply.html" style="font-weight: normal">志願</a>
           </div>
 
           <div id="question" style="margin-bottom: 10%">
-            <button class="faq-button" onclick="toggleDropdown()">QnA<i class="fa-solid fa-circle-chevron-down"></i></button>
+            <button class="faq-button font-gray" style="font-size: 20px;" onclick="toggleDropdown()">QnA<i class="fa-solid fa-circle-chevron-down"></i></button>
 
 
             <div id="faqDropdown" class="dropdown justify-content-center">
               <div style="display: inline; align-items: center;">
                 <br>
                 <div class="dropdown-item mobile-dropdown" style="text-align: left">
-                  <span class="noto-sans-jp" style="font-weight: bold;">交通費支援について</span>
-                  <span class="noto-sans-jp" style="font-weight: normal">通勤のための定期券を提供します。</span>
+                  <span class="noto-sans-jp font-gray" style="font-weight: bold;">交通費支援について</span>
+                  <span class="noto-sans-jp font-gray" style="font-weight: normal">通勤のための定期券を提供します。</span>
+                  <br>
+                  <hr>
                 </div>
-                <br>
-                <hr>
-                <br>
+
                 <div class="dropdown-item mobile-dropdown pc-s" style="text-align: left">
-                  <span class="noto-sans-jp" style="font-weight: bold">OJT期間について</span>
-                  <span class="noto-sans-jp ms-s" style="font-weight: normal">基本的には3ヶ月ですが、個々人の力量によっては<br>もっと早く現場に入る場合もあります。</span>
+                  <br>
+                  <span class="noto-sans-jp font-gray" style="font-weight: bold">OJT期間について</span>
+                  <span class="noto-sans-jp font-gray" style="font-weight: normal">基本的には3ヶ月ですが、個々人の力量によっては<br>もっと早く現場に入る場合もあります。</span>
                 </div>
                 <div class="dropdown-item mobile-dropdown mb-s" style="text-align: left">
-                  <span class="noto-sans-jp" style="font-weight: bold">OJT期間について</span>
-                  <span class="noto-sans-jp" style="font-weight: normal">基本的には3ヶ月ですが、<br>個々人の力量によっては<br>もっと早く現場に入る場合もあります。</span>
+                  <span class="noto-sans-jp font-gray" style="font-weight: bold">OJT期間について</span>
+                  <span class="noto-sans-jp font-gray" style="font-weight: normal">基本的には3ヶ月ですが、<br>個々人の力量によっては<br>もっと早く現場に入る場合もあります。</span>
+                  <br>
+                  <hr>
                 </div>
-                <br>
-                <hr>
-                <br>
                 <div class="dropdown-item mobile-dropdown" style="text-align: left">
-                  <span class="noto-sans-jp" style="font-weight: bold">求める日本語の実力について</span>
-                  <span class="noto-sans-jp" style="font-weight: normal">最低JLPT N2は必要です。</span>
+                  <br>
+                  <span class="noto-sans-jp font-gray" style="font-weight: bold">求める日本語の実力について</span>
+                  <span class="noto-sans-jp font-gray" style="font-weight: normal">最低JLPT N2は必要です。</span>
+                  <br>
+                  <hr>
                 </div>
-                <br>
-                <hr>
-                <h3 class="noto-sans-jp font-gray" style="margin: 15px; font-size: 25px; font-weight: normal">他の質問</h3>
+                <h3 class="noto-sans-jp font-gray" style="margin-left: 25px; font-size: 25px; font-weight: normal">他の質問</h3>
                 <form id="emailForm" style="margin: 0 auto; margin-bottom: 15px; width: 90%; justify-content: center">
                   <textarea id="message" placeholder="Your Message" class="recruit-textarea"></textarea>
-                  <button type="button" class="recruit-button" onclick="openEmailClient()">Submit</button>
+                  <button type="button" class="recruit-button font-gray" onclick="openEmailClient()">Submit</button>
                 </form>
               </div>
 

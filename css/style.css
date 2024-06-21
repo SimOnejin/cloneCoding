@@ -500,6 +500,19 @@ textarea {
   height: 130px
 }
 
+.recruit-button-text {
+  width:100%;
+  background-color: #393c44;
+  color: white;
+  padding: 10px 20px;
+  margin-bottom: 5%;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+}
+
 /*Mobile Screen CSS*/
 @media (max-width: 500px) {
   tr {
@@ -508,6 +521,14 @@ textarea {
   th. {
     width: 100px;
   }
+  .pc-footer-text {
+    display: none;
+  }
+
+  .mobile-footer-text {
+    font-size: 10px;
+  }
+
   .b-table {
     display: none;
   }
@@ -518,6 +539,10 @@ textarea {
   .mobile-title {
     font-size: 30px;
     margin-top: 2%;
+  }
+
+  .pc-textbox {
+    display: none;
   }
 
   .mobile-map {
@@ -563,12 +588,24 @@ textarea {
     display: none;
   }
 
+  .mobile-textbox {
+    display: none;
+  }
+
   tr {
     height: 80px;
   }
 
   .a-table {
     display: none;
+  }
+
+  .mobile-footer-text {
+    display: none;
+  }
+
+  .pc-footer-text {
+    font-size: 14px;
   }
 
   .mobile-map {

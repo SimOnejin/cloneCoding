@@ -522,9 +522,13 @@ textarea {
     width: 100px;
   }
   .pc-footer-text {
-    font-size: 13px;
     display: none;
   }
+
+  .mobile-footer-text {
+    font-size: 7px;
+  }
+
   .b-table {
     display: none;
   }
@@ -590,8 +594,12 @@ textarea {
 
   .mobile-footer-text {
     display: none;
-    font-size: 7px;
   }
+
+  .pc-footer-text {
+    font-size: 14px;
+  }
+
   .mobile-map {
     margin-top: -30px;
     text-decoration: none;

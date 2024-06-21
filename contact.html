@@ -146,8 +146,6 @@
 
       submitButton.addEventListener('click', function(event) {
         const mailAddress = document.getElementById('mail-address');
-        const companyName = document.getElementById('company-name');
-        const companyHurigana = document.getElementById('company-hurigana');
         const name = document.getElementById('name');
         const nameHurigana = document.getElementById('name-hurigana');
         const phoneNumber = document.getElementById('phone-number');
@@ -156,15 +154,9 @@
         const checkbox2 = document.getElementById('checkbox2');
         let isError = false;
 
-        // 각 필수 입력 필드를 검사합니다.
         if (!mailAddress.value.trim()) {
           alert('メールアドレスが入力されていません');
           mailAddress.focus();
-          isError = true;
-        } else if (!companyName.value.trim() || !companyHurigana.value.trim()) {
-          alert('会社名が入力されていません');
-          companyName.focus();
-          companyHurigana.focus();
           isError = true;
         } else if (!name.value.trim() || !nameHurigana.value.trim()) {
           alert('名前が入力されていません');

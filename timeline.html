@@ -45,20 +45,6 @@
             }
         }
 
-        .timeline-item {
-            position: relative;
-            width: 45%;
-            background-color: white;
-            padding: 20px;
-            margin: 20px 0;
-            margin-top: 100px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-        }
-
         .timeline-item::before {
             content: '';
             position: absolute;
@@ -98,19 +84,55 @@
           .timeline-item > p{
             font-size: 13px;
           }
+
+          .timeline-item {
+            position: relative;
+            width: 45%;
+            background-color: white;
+            padding: 20px;
+            margin: 60px 1px 20px 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+          }
+
+          .timeline-subtitle {
+            font-size: 14px;
+          }
+        }
+
+        @media (min-width: 501px) {
+          .timeline-item {
+            position: relative;
+            width: 45%;
+            background-color: white;
+            padding: 20px;
+            margin: 100px 1px 20px 28px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+          }
+
+          .timeline-subtitle {
+            font-size: 25px;
+          }
         }
     </style>
 </head>
 <body id="body1">
 <header id="header1">
-    <h1>会社沿革</h1>
-    <h4>Our Company History</h4>
+    <h1 class="timeline-title subtitle">会社沿革</h1>
+    <h4 style="font-size: 20px; margin-top: 30px;">Our Company History</h4>
 </header>
 <section class="timeline">
     <div class="timeline-line"></div>
     <div class="timeline-item" data-year="2020">
-        <h2>2020.04.08</h2>
-        <p>会社設立。<br>Company founded.</p>
+        <h2 class="timeline-subtitle">2020.04.08</h2>
+        <p style="margin-top: 15px">会社設立。<br>Company founded.</p>
     </div>
 <!--    <div class="timeline-item" data-year="2021">-->
 <!--        <h2>2021</h2>-->
@@ -125,8 +147,8 @@
 <!--        <p>Reached 623 million users.</p>-->
 <!--    </div>-->
     <div class="timeline-item" data-year="2024">
-        <h2>2024</h2>
-        <p>売上3億円、従業員30人.</p>
+        <h2 class="timeline-subtitle">2024</h2>
+        <p style="margin-top: 15px">売上3億円、従業員30人.</p>
     </div>
 <!--    <div class="timeline-item" data-year="2025">-->
 <!--        <h2>2025</h2>-->
@@ -156,7 +178,7 @@
         };
 
         window.addEventListener('scroll', handleScroll);
-        handleScroll(); // 초기 로드 시 호출하여 뷰포트에 있는 항목을 표시
+        handleScroll(); // 초기 로드 시 호출하여 뷰포트에 있는 항ㄴㄹㅎㄴㄹㅎㄴ목을 표시
     });
 </script>
 </body>

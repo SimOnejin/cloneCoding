@@ -134,11 +134,15 @@ span {
 }
 
 .modal-menu-text {
+  display: flex;
   font-size: 14px;
   color: #333333;
   font-weight: normal;
   text-decoration: none;
-  margin-right: 10px;
+  /*margin-right: 20px;*/
+  width: 100%;
+  flex-grow: 1;
+  /*padding-right: 80%;*/
 }
 
 .responsive-image {

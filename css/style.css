@@ -590,6 +590,7 @@ textarea {
 
   .mobile-footer-text {
     display: none;
+    font-size: 7px;
   }
   .mobile-map {
     margin-top: -30px;

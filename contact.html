@@ -100,7 +100,7 @@
               <span style="vertical-align: bottom; padding-top: 10px;">電話番号</span>
             </p>
             <p style="width: auto; height: 20px; font-size: 13px; font-weight: normal; color: red;" class="noto-sans-jp">
-              <span style="vertical-align: bottom; padding-top: 13px;">（必須）</span>
+<!--              <span style="vertical-align: bottom; padding-top: 13px;">（必須）</span>-->
             </p>
             <div class="w-100" style="margin-bottom: 15px;">
               <input id="phone" type="text" class="form-control " placeholder="000-0000-0000"　aria-label="Username" aria-describedby="basic-addon1">
@@ -117,15 +117,15 @@
             </div>
 
 <!--            <p class="noto-sans-jp font-gray" style="font-size: 14px; font-weight: normal; margin-bottom: -1px; width: 97%">お問い合わせの際には「個人情報の取り扱いについて」をお読みいただき、予め同意の上、お問い合わせください。</p>-->
-<!--            <div style="display: flex;">-->
-<!--              <input type="checkbox" style="height: 20px; margin-top: 12px; margin-right: 5px; ">-->
-<!--              <p style="width: auto; height: 20px; font-size: 14px; font-weight: normal;" class="noto-sans-jp font-gray">-->
-<!--                <span style="vertical-align: bottom; padding-top: 10px;">個人情報の取り扱いについて同意する</span>-->
-<!--              </p>-->
-<!--              <p style="height: 20px; font-size: 13px; font-weight: normal; color: red;" class="noto-sans-jp">-->
-<!--                <span style="vertical-align: bottom; padding-top: 11px;">（必須）</span>-->
-<!--              </p>-->
-<!--            </div>-->
+            <div style="display: flex;">
+              <input type="checkbox" style="height: 20px; margin-top: 12px; margin-right: 5px; ">
+              <p style="width: auto; height: 20px; font-size: 14px; font-weight: normal;" class="noto-sans-jp font-gray">
+                <span style="vertical-align: bottom; padding-top: 10px;">個人情報の取り扱いについて同意する</span>
+              </p>
+              <p style="height: 20px; font-size: 13px; font-weight: normal; color: red;" class="noto-sans-jp">
+                <span style="vertical-align: bottom; padding-top: 11px;">（必須）</span>
+              </p>
+            </div>
 
 <!--            <p class="noto-sans-jp font-gray" style="font-size: 14px; font-weight: normal; margin-bottom: -1px; margin-top: 20px; width: 97%">確認画面は表示されません。送信ボタンを押す前に、入力内容に間違いがないかご確認ください。</p>-->
 <!--            <div style="display: flex;">-->
@@ -148,7 +148,7 @@
             <script>
               function openEmailClient() {
                 var subject = document.getElementById('subject').value;
-                var mailAddress = document.getElementById('mailAddress').value;
+                // var mailAddress = document.getElementById('mailAddress').value;
                 var companyName = document.getElementById('companyName').value;
                 var companyNameJP = document.getElementById('companyNameJP').value;
                 var name = document.getElementById('name').value;

@@ -553,6 +553,10 @@ textarea {
     font-size: small;
   }
 
+  .mobile-body {
+    padding: 10%;
+  }
+
   .subtitle {
     font-size: 35px;
     font-weight: bold;

@@ -382,10 +382,6 @@ textarea {
   padding-top: 5%;
 }
 
-.link{
-  margin: 2%;
-  /*padding-left: 15%;*/
-}
 
 .box {
   /*color: black;*/
@@ -531,6 +527,10 @@ textarea {
     display: none;
   }
 
+  .mobile-link{
+    margin: 2%;
+  }
+
   .mobile-footer-text {
     font-size: 10px;
   }
@@ -553,10 +553,11 @@ textarea {
   }
 
   .mobile-map {
-    margin-top: -5px;
+  /*  margin-top: -5px;*/
     text-decoration: none;
     color: black;
     font-size: small;
+    margin: 1%;
   }
 
   .mobile-body {
@@ -620,10 +621,12 @@ textarea {
   }
 
   .mobile-map {
-    margin-top: -30px;
+    /*margin-top: -30px;*/
     text-decoration: none;
     color: black;
     font-size: small;
+    margin: 1%;
+    padding-left: 15%;
   }
 
   .subtitle {

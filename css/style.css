@@ -545,7 +545,7 @@ textarea {
   }
 
   .mobile-body{
-    padding: 5%;
+    padding: 10%;
   }
 
   .pc-textbox {
@@ -553,16 +553,17 @@ textarea {
   }
 
   .mobile-map {
-  /*  margin-top: -5px;*/
+    /*margin-top: 5px;*/
     text-decoration: none;
     color: black;
     font-size: small;
     margin: 1%;
+    padding: 2%;
+    display: flex;
+    position: static;
+    align-content: center;
   }
 
-  .mobile-body {
-    padding: 10%;
-  }
 
   .subtitle {
     font-size: 35px;
@@ -627,6 +628,10 @@ textarea {
     font-size: small;
     margin: 1%;
     padding-left: 15%;
+    /*padding-top: 2%;*/
+    display: flex;
+    position: static;
+    align-content: center;
   }
 
   .subtitle {

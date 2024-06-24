@@ -146,7 +146,6 @@
             </div>
 
             <script>
-              function openEmailClient() {
                 var subject = document.getElementById('subject').value;
                 var companyName = document.getElementById('companyName').value;
                 var companyNameJP = document.getElementById('companyNameJP').value;
@@ -154,6 +153,11 @@
                 var nameJP = document.getElementById('nameJP').value;
                 var phone = document.getElementById('phone').value;
                 var content = document.getElementById('content').value;
+                const checkbox = document.getElementById('checkbox');
+                const submitButton = document.querySelector('.btn');
+                var isError = new Boolean(false);
+
+              function openEmailClient() {
 
                 var bodyContent =
                         "会社名(法人の方のみ)\n: " + companyName + "\n\n"
@@ -170,24 +174,21 @@
               }
 
               document.addEventListener('DOMContentLoaded', function() {
-                const submitButton = document.querySelector('.btn');
+
 
                 submitButton.addEventListener('click', function(event) {
-                  const mailAddress = document.getElementById('mailAddress');
-                  const content = document.getElementById('content');
-                  const checkbox = document.getElementById('checkbox');
-                  const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-                  let isError = false;
 
-                  if (!mailAddress.value.trim()) {
-                    alert('メールアドレスが入力されていません');
-                    mailAddress.focus();
+                  if (!subject.value.trim()) {
+                    alert('メール題目が入力されていません');
+                      subject.focus();
                     isError = true;
-                  } else if (!emailPattern.test(mailAddress.value.trim())) {
-                    alert('メールアドレスを確認していません');
-                    mailAddress.focus();
-                    isError = true;
-                  } else if (!content.value.trim()){
+                  }
+                      // else if (!emailPattern.test(mailAddress.value.trim())) {
+                  //   alert('メールアドレスを確認していません');
+                  //   mailAddress.focus();
+                  //   isError = true;
+                  // }
+                  else if (!content.value.trim()){
                     alert('内容を入力してください');
                     content.focus();
                     isError = true;
@@ -195,6 +196,8 @@
                     alert('チェックしてください');
                     isError = true;
                     checkbox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                  } else {
+                      isError = false;
                   }
 
                   if (isError) {

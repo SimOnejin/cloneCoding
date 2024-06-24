@@ -114,9 +114,9 @@
 <!--            <p class="noto-sans-jp font-gray" style="font-size: 14px; font-weight: normal; margin-bottom: -1px; width: 97%">お問い合わせの際には「個人情報の取り扱いについて」をお読みいただき、予め同意の上、お問い合わせください。</p>-->
             <div style="display: flex;">
               <input id="checkbox" type="checkbox" style="height: 20px; margin-top: 12px; margin-right: 5px; ">
-              <p style="width: auto; height: 20px; font-size: 14px; font-weight: normal;" class="noto-sans-jp font-gray">
-                <span style="vertical-align: bottom; padding-top: 10px;">個人情報の取り扱いについて同意する</span>
-              </p>
+                <label for="checkbox"  style="width: auto; height: 20px; font-size: 14px; font-weight: normal;" class="noto-sans-jp font-gray">
+                    <span style="vertical-align: bottom; padding-top: 10px;">個人情報の取り扱いについて同意する</span>
+                </label>
               <p style="height: 20px; font-size: 13px; font-weight: normal; color: red;" class="noto-sans-jp">
                 <span style="vertical-align: bottom; padding-top: 11px;">（必須）</span>
               </p>
@@ -173,32 +173,23 @@
                   const checkbox = document.getElementById('checkbox');
                   // const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
-                    var isError = new Boolean(false);
 
                   if (!subject.value.trim()) {
                     alert('メール題目が入力されていません');
                       subject.focus();
-                    isError = false;
                   }
                       // else if (!emailPattern.test(mailAddress.value.trim())) {
                   //   alert('メールアドレスを確認していません');
                   //   mailAddress.focus();
-                  //   isError = true;
                   // }
                   else if (!content1.value.trim()){
                     alert('内容を入力してください');
                     content1.focus();
-                    isError = false;
                   } else if (!checkbox.checked){
                     alert('チェックしてください');
-                    isError = false;
                     checkbox.scrollIntoView({ behavior: 'smooth', block: 'center' });
                   } else {
                       openEmailClient();
-                  }
-
-                  if (isError) {
-                    event.preventDefault(); // 폼 전송 방지;
                   }
                 });
               });

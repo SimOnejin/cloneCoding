@@ -532,10 +532,7 @@ textarea {
   .b-table {
     display: none;
   }
-  .mobile-body {
-    margin-left: -10%;
-    margin-right: -10%
-  }
+
   .mobile-title {
     font-size: 30px;
     margin-top: 2%;

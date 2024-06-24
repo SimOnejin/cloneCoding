@@ -595,6 +595,10 @@ textarea {
     display: none;
   }
 
+  #timeline-container{
+    overflow: hidden;
+  }
+
 }
 
 @media (min-width: 501px) {

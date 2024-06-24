@@ -49,7 +49,7 @@
               <span style="vertical-align: bottom; padding-top: 13px;">（必須）</span>
             </p>
             <div class="w-100" style="margin-bottom: 15px;">
-              <input id="subject" type="text" class="form-control" placeholder="メールのタイトル" aria-label="Username" aria-describedby="basic-addon1">
+              <input id="mailAddress" type="text" class="form-control" placeholder="メールのタイトル" aria-label="Username" aria-describedby="basic-addon1">
             </div>
 
 <!--            <p style="width: auto; height: 20px; font-size: 16px; font-weight: normal;" class="noto-sans-jp font-gray">-->
@@ -118,7 +118,7 @@
 
 <!--            <p class="noto-sans-jp font-gray" style="font-size: 14px; font-weight: normal; margin-bottom: -1px; width: 97%">お問い合わせの際には「個人情報の取り扱いについて」をお読みいただき、予め同意の上、お問い合わせください。</p>-->
             <div style="display: flex;">
-              <input type="checkbox" style="height: 20px; margin-top: 12px; margin-right: 5px; ">
+              <input id="checkbox" type="checkbox" style="height: 20px; margin-top: 12px; margin-right: 5px; ">
               <p style="width: auto; height: 20px; font-size: 14px; font-weight: normal;" class="noto-sans-jp font-gray">
                 <span style="vertical-align: bottom; padding-top: 10px;">個人情報の取り扱いについて同意する</span>
               </p>
@@ -148,7 +148,6 @@
             <script>
               function openEmailClient() {
                 var subject = document.getElementById('subject').value;
-                var mailAddress = document.getElementById('mailAddress').value;
                 var companyName = document.getElementById('companyName').value;
                 var companyNameJP = document.getElementById('companyNameJP').value;
                 var name = document.getElementById('name').value;
@@ -169,6 +168,41 @@
                         '&body=' + encodeURIComponent(bodyContent);
                 window.location.href = mailtoLink;
               }
+
+              document.addEventListener('DOMContentLoaded', function() {
+                const submitButton = document.querySelector('.btn');
+
+                submitButton.addEventListener('click', function(event) {
+                  const mailAddress = document.getElementById('mailAddress');
+                  const content = document.getElementById('content');
+                  const checkbox = document.getElementById('checkbox');
+                  const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+                  let isError = false;
+
+                  if (!mailAddress.value.trim()) {
+                    alert('メールアドレスが入力されていません');
+                    mailAddress.focus();
+                    isError = true;
+                  } else if (!emailPattern.test(mailAddress.value.trim())) {
+                    alert('メールアドレスを確認していません');
+                    mailAddress.focus();
+                    isError = true;
+                  } else if (!content.value.trim()){
+                    alert('内容を入力してください');
+                    content.focus();
+                    isError = true;
+                  } else if (!checkbox.checked){
+                    alert('チェックしてください');
+                    isError = true;
+                    checkbox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                  }
+
+                  if (isError) {
+                    event.preventDefault(); // 폼 전송 방지;
+                  }
+                });
+              });
+
             </script>
 
 

@@ -49,7 +49,7 @@
               <span style="vertical-align: bottom; padding-top: 13px;">（必須）</span>
             </p>
             <div class="w-100" style="margin-bottom: 15px;">
-              <input id="mailAddress" type="text" class="form-control" placeholder="メールのタイトル" aria-label="Username" aria-describedby="basic-addon1">
+              <input id="subject" type="text" class="form-control" placeholder="メールのタイトル" aria-label="Username" aria-describedby="basic-addon1">
             </div>
 
 <!--            <p style="width: auto; height: 20px; font-size: 16px; font-weight: normal;" class="noto-sans-jp font-gray">-->
@@ -140,24 +140,20 @@
 
 
             <div class="w-100" style="margin-bottom: 15px; margin-top: 20px;">
-              <button type="button" class="btn btn-primary" onclick="openEmailClient()" style="width: 100%">送信</button>
+              <button type="button" class="btn btn-primary" style="width: 100%">送信</button>
               <span  style="text-align: center; font-size: small; padding-top: 10px; color: #8c8c8c">ボタンを押すと、メール クライアントにつながります。<br>Press the button to connect to the mail client.</span>
 
             </div>
 
             <script>
-                var subject = document.getElementById('subject').value;
-                var companyName = document.getElementById('companyName').value;
-                var companyNameJP = document.getElementById('companyNameJP').value;
-                var name = document.getElementById('name').value;
-                var nameJP = document.getElementById('nameJP').value;
-                var phone = document.getElementById('phone').value;
-                var content = document.getElementById('content').value;
-                const checkbox = document.getElementById('checkbox');
-                const submitButton = document.querySelector('.btn');
-                var isError = new Boolean(false);
-
               function openEmailClient() {
+                  var subject = document.getElementById('subject').value;
+                  var companyName = document.getElementById('companyName').value;
+                  var companyNameJP = document.getElementById('companyNameJP').value;
+                  var name = document.getElementById('name').value;
+                  var nameJP = document.getElementById('nameJP').value;
+                  var phone = document.getElementById('phone').value;
+                  var content = document.getElementById('content').value;
 
                 var bodyContent =
                         "会社名(法人の方のみ)\n: " + companyName + "\n\n"
@@ -174,30 +170,36 @@
               }
 
               document.addEventListener('DOMContentLoaded', function() {
-
+                const submitButton = document.querySelector('.btn');
 
                 submitButton.addEventListener('click', function(event) {
+                  // const mailAddress = document.getElementById('mailAddress');
+                  const content1 = document.getElementById('content');
+                  const checkbox = document.getElementById('checkbox');
+                  // const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+                    var isError = new Boolean(false);
 
                   if (!subject.value.trim()) {
                     alert('メール題目が入力されていません');
                       subject.focus();
-                    isError = true;
+                    isError = false;
                   }
                       // else if (!emailPattern.test(mailAddress.value.trim())) {
                   //   alert('メールアドレスを確認していません');
                   //   mailAddress.focus();
                   //   isError = true;
                   // }
-                  else if (!content.value.trim()){
+                  else if (!content1.value.trim()){
                     alert('内容を入力してください');
-                    content.focus();
-                    isError = true;
+                    content1.focus();
+                    isError = false;
                   } else if (!checkbox.checked){
                     alert('チェックしてください');
-                    isError = true;
+                    isError = false;
                     checkbox.scrollIntoView({ behavior: 'smooth', block: 'center' });
                   } else {
-                      isError = false;
+                      openEmailClient();
                   }
 
                   if (isError) {

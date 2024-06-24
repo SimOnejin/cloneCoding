@@ -538,6 +538,10 @@ textarea {
     margin-top: 2%;
   }
 
+  .mobile-body{
+    padding: 5%;
+  }
+
   .pc-textbox {
     display: none;
   }

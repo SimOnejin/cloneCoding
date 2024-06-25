@@ -10,6 +10,9 @@ body {
   z-index: 1000;
   /*box-shadow: 0 4px 4px -4px rgba(0, 0, 0, 0.5);*/
 }
+#content_1{
+  padding-top: 7%;
+}
 
 .navbar1-brand img {
   height: 70px;
@@ -77,6 +80,9 @@ span {
     /*order: -1;*/
     right: -5%;
     border: 0;
+  }
+  #content_1{
+    padding-top: 20%;
   }
 }
 

@@ -535,10 +535,6 @@ textarea {
     font-size: 10px;
   }
 
-  .b-table {
-    display: none;
-  }
-
   .mobile-title {
     font-size: 30px;
     margin-top: 2%;
@@ -628,6 +624,17 @@ textarea {
   }
 }
 
+@media (max-width: 634px) {
+  .b-table {
+    display: none;
+  }
+}
+
+@media (min-width: 635px) {
+  .a-table {
+    display: none;
+  }
+}
 
 @media (min-width: 501px) {
   .mb-s {
@@ -643,9 +650,6 @@ textarea {
     height: 80px;
   }
 
-  .a-table {
-    display: none;
-  }
 
   .mobile-footer-text {
     display: none;

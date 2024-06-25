@@ -40,11 +40,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 //Effect Sound
 document.addEventListener("DOMContentLoaded", function() {
-    const audioContext = new (window.AudioContext || window.webkitAudioContext)();
-    const audioElement = document.getElementById('background-music');
-    const audioSrc = audioContext.createMediaElementSource(audioElement);
-    audioSrc.connect(audioContext.destination);
-
+    const audio = document.getElementById('background-music');
     const startButton = document.getElementById('start-button');
     const initialPlayOverlay = document.getElementById('initial-play');
     let isPlaying = false;
@@ -54,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const playMusic = () => {
         if (!isPlaying) {
-            audioElement.play().then(() => {
+            audio.play().then(() => {
                 isPlaying = true;
             }).catch(error => {
                 console.error("Error playing audio:", error);
@@ -64,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const pauseMusic = () => {
         if (isPlaying) {
-            audioElement.pause();
+            audio.pause();
             isPlaying = false;
         }
     };
@@ -82,7 +78,6 @@ document.addEventListener("DOMContentLoaded", function() {
     startButton.addEventListener('click', () => {
         initialPlayOverlay.classList.add('hidden');
     });
-
     // 오버레이 클릭 시 팝업 닫기
     popupOverlay.addEventListener('click', function(event) {
         // 클릭한 대상이 팝업 콘텐츠가 아니면 팝업 닫기
@@ -91,6 +86,16 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
+//For Tab's Logo
+document.addEventListener("DOMContentLoaded", function() {
+    const link = document.createElement('link');
+    link.rel = 'icon';
+    link.type = 'image/png';
+    link.href = 'img/logo.png';
+    document.head.appendChild(link);
+});
+
 
 // //initial-play Can touch Anywhere
 // document.addEventListener("DOMContentLoaded", function() {

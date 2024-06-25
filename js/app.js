@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const link = document.createElement('link');
     link.rel = 'icon';
     link.type = 'image/png';
-    link.href = 'http://witty-hyuga-9477.angry.jp/assets/img/logo.png';
+    link.href = 'img/logo.png';
     document.head.appendChild(link);
 });
 
